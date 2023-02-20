@@ -14,15 +14,32 @@ const game = () => {
 
     //Play Game
     const playGame = () => {
-        const options = document.querySelector('.choices button');
+        const choices = document.querySelectorAll('.choices button');
         const player = document.querySelector('.images player-image');
         const cpu = document.querySelector('.images cpu-image');
 
-        //Cpu choices
+        //Cpu options
         const computerChoices = ['infantry', 'cavalry', 'archers'];
 
-        const computerNumber = Math.floor(Math.random() * 3);
-        console.log(computerNumber);
+        choices.forEach(option => {
+            option.addEventListener('click', function () {
+                //Computer choice
+                const computerNumber = Math.floor(Math.random() * 3);
+                const computerChoice = computerChoices[computerNumber];
+
+            });
+        });
+    };
+
+    //Choice Comparison - tie
+
+    const compareChoice = (playerChoice, cpuChoice) => {
+        const winner = document.querySelector('.winner');
+        if (playerChoice === cpuChoice) {
+            winner.textContent = 'It is a draw';
+            return;
+        }
+        if (playerChoice === '')
     }
 
     //Call all inner functions
