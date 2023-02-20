@@ -21,16 +21,17 @@ const game = () => {
         //Cpu choices
         const computerChoices = ['infantry', 'cavalry', 'archers'];
 
-        const computerNumber = Math.random() * 3;
+        const computerNumber = Math.floor(Math.random() * 3);
+        console.log(computerNumber);
     }
 
     //Call all inner functions
 
     startGame();
-    updateScore();
+    playGame();
 
 };
 
 //Start the game
 
-startGame();
+game();
