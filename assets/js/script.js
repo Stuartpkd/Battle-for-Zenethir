@@ -29,6 +29,8 @@ const game = () => {
                 //Compare Choices
                 compareChoice(this.textContent.toLowerCase(), cpuChoice);
                 //Update Images
+                player.src = `./assets/temp/${this.textContent.toLowerCase}.svg`;
+                cpu.src = `./assets/temp/${this.textContent.toLowerCase}.svg`;
 
             });
         });
