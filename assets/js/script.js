@@ -83,6 +83,17 @@ const game = () => {
                 return;
             }
         };
+
+        //Check for spearman
+        if (playerChoice === 'spearman') {
+            if (computerChoice === 'swordsman', 'cavalry') {
+                winner.textContent = 'Player Wins'
+                return;
+            } else if (computerChoice === 'catapult', 'archer') {
+                winner.textContent = 'Cpu Wins'
+                return;
+            }
+        };
     }
 
     //Call all inner functions
