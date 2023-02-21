@@ -34,12 +34,15 @@ const game = () => {
     //Choice Comparison - tie
 
     const compareChoice = (playerChoice, cpuChoice) => {
+        //Update Text
         const winner = document.querySelector('.winner');
         if (playerChoice === cpuChoice) {
             winner.textContent = 'It is a draw';
             return;
         }
-        if (playerChoice === '')
+        if (playerChoice === 'infantry') {
+            if (computerChoice === )
+        }
     }
 
     //Call all inner functions
