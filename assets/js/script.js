@@ -25,8 +25,9 @@ const game = () => {
             option.addEventListener('click', function () {
                 //Computer choice
                 const computerNumber = Math.floor(Math.random() * 5);
-                const computerChoice = computerChoices[computerNumber];
-
+                const cpuChoice = computerChoices[computerNumber];
+                //Compare Choices
+                compareChoice(this.textContent, cpuChoice);
             });
         });
     };
@@ -42,10 +43,10 @@ const game = () => {
         }
         //Check for swordsman
         if (playerChoice === 'swordsman') {
-            if (computerChoice === 'archers', 'catapult') {
+            if (cpuChoice === 'archers' || cpuChoice === 'catapult') {
                 winner.textContent = 'Player Wins'
                 return;
-            } else if (computerChoice === 'cavalry', 'spearman') {
+            } else if (cpuChoice === 'cavalry' || cpuChoice === 'spearman') {
                 winner.textContent = 'Cpu Wins'
                 return;
             }
@@ -53,10 +54,10 @@ const game = () => {
 
         //Check for archers
         if (playerChoice === 'archers') {
-            if (computerChoice === 'spearman', 'cavalry') {
+            if (cpuChoice === 'spearman' || cpuChoice === 'cavalry') {
                 winner.textContent = 'Player Wins'
                 return;
-            } else if (computerChoice === 'swordsman', 'catapult') {
+            } else if (cpuChoice === 'swordsman' || cpuChoice === 'catapult') {
                 winner.textContent = 'Cpu Wins'
                 return;
             }
@@ -64,10 +65,10 @@ const game = () => {
 
         //Check for cavalry
         if (playerChoice === 'cavalry') {
-            if (computerChoice === 'swordsman', 'catapult') {
+            if (cpuChoice === 'swordsman' || cpuChoice === 'catapult') {
                 winner.textContent = 'Player Wins'
                 return;
-            } else if (computerChoice === 'spearman', 'archers') {
+            } else if (cpuChoice === 'spearman' || cpuChoice === 'archers') {
                 winner.textContent = 'Cpu Wins'
                 return;
             }
@@ -75,10 +76,10 @@ const game = () => {
 
         //Check for catapult
         if (playerChoice === 'catapult') {
-            if (computerChoice === 'archers', 'spearman') {
+            if (cpuChoice === 'archers' || cpuChoice === 'spearman') {
                 winner.textContent = 'Player Wins'
                 return;
-            } else if (computerChoice === 'swordsman', 'cavalry') {
+            } else if (cpuChoice === 'swordsman' || cpuChoice === 'cavalry') {
                 winner.textContent = 'Cpu Wins'
                 return;
             }
@@ -86,10 +87,10 @@ const game = () => {
 
         //Check for spearman
         if (playerChoice === 'spearman') {
-            if (computerChoice === 'swordsman', 'cavalry') {
+            if (cpuChoice === 'swordsman' || cpuChoice === 'cavalry') {
                 winner.textContent = 'Player Wins'
                 return;
-            } else if (computerChoice === 'catapult', 'archer') {
+            } else if (cpuChoice === 'catapult' || cpuChoice === 'archer') {
                 winner.textContent = 'Cpu Wins'
                 return;
             }
