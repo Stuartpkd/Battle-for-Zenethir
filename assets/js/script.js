@@ -19,12 +19,12 @@ const game = () => {
         const cpu = document.querySelector('.images cpu-image');
 
         //Cpu options
-        const computerChoices = ['infantry', 'cavalry', 'archers'];
+        const computerChoices = ['swordsman', 'cavalry', 'archers', 'catapult', 'spearman'];
 
         choices.forEach(option => {
             option.addEventListener('click', function () {
                 //Computer choice
-                const computerNumber = Math.floor(Math.random() * 3);
+                const computerNumber = Math.floor(Math.random() * 5);
                 const computerChoice = computerChoices[computerNumber];
 
             });
