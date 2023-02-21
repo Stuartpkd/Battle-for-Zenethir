@@ -40,8 +40,26 @@ const game = () => {
             winner.textContent = 'It is a draw';
             return;
         }
-        if (playerChoice === 'infantry') {
-            if (computerChoice === )
+        //Check for swordsman
+        if (playerChoice === 'swordsman') {
+            if (computerChoice === 'archers', 'catapult') {
+                winner.textContent = 'Player Wins'
+                return;
+            } else if (computerChoice === 'cavalry', 'spearman') {
+                winner.textContent = 'Cpu Wins'
+                return;
+            }
+        }
+
+        //Check for lizard
+        if (playerChoice === 'archers') {
+            if (computerChoice === 'spearman', 'cavalry') {
+                winner.textContent = 'Player Wins'
+                return;
+            } else if (computerChoice === 'swordsman', 'catapult') {
+                winner.textContent = 'Cpu Wins'
+                return;
+            }
         }
     }
 
