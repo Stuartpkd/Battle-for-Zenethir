@@ -51,7 +51,7 @@ const game = () => {
             }
         }
 
-        //Check for lizard
+        //Check for archers
         if (playerChoice === 'archers') {
             if (computerChoice === 'spearman', 'cavalry') {
                 winner.textContent = 'Player Wins'
@@ -60,7 +60,29 @@ const game = () => {
                 winner.textContent = 'Cpu Wins'
                 return;
             }
-        }
+        };
+
+        //Check for cavalry
+        if (playerChoice === 'cavalry') {
+            if (computerChoice === 'swordsman', 'catapult') {
+                winner.textContent = 'Player Wins'
+                return;
+            } else if (computerChoice === 'spearman', 'archers') {
+                winner.textContent = 'Cpu Wins'
+                return;
+            }
+        };
+
+        //Check for catapult
+        if (playerChoice === 'catapult') {
+            if (computerChoice === 'archers', 'spearman') {
+                winner.textContent = 'Player Wins'
+                return;
+            } else if (computerChoice === 'swordsman', 'cavalry') {
+                winner.textContent = 'Cpu Wins'
+                return;
+            }
+        };
     }
 
     //Call all inner functions
