@@ -15,8 +15,8 @@ const game = () => {
     //Play Game
     const playGame = () => {
         const choices = document.querySelectorAll('.choices button');
-        const player = document.querySelector('.images player-image');
-        const cpu = document.querySelector('.images cpu-image');
+        const playerImage = document.querySelector('.images playerImage');
+        const cpuImage = document.querySelector('.images cpuImage');
 
         //Cpu options
         const computerChoices = ['swordsman', 'cavalry', 'archers', 'catapult', 'spearman'];
@@ -29,8 +29,8 @@ const game = () => {
                 //Compare Choices
                 compareChoice(this.textContent.toLowerCase(), cpuChoice);
                 //Update Images
-                player.src = `./assets/temp/${this.textContent.toLowerCase}.svg`;
-                cpu.src = `./assets/temp/${this.textContent.toLowerCase}.svg`;
+                playerImage.src = `./assets/temp/${this.textContent.toLowerCase}.svg`;
+                cpuImage.src = `./assets/temp/${this.textContent.toLowerCase}.svg`;
 
             });
         });
