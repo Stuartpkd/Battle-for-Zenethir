@@ -1,6 +1,6 @@
 const game = () => {
-    let playerScore = 0;
-    let CpuScore = 0;
+    let pScore = 0;
+    let cScore = 0;
 
     const startGame = () => {
         const playBtn = document.querySelector('.title button');
@@ -36,6 +36,13 @@ const game = () => {
         });
     };
 
+    const updateScore = () => {
+        const playerScore = document.querySelector('.player-score p');
+        const cpuScore = document.querySelector('.cpu-score p');
+        playerScore.textContent = pScore;
+        cpuScore.textContent = cScore;
+    }
+
     //Choice Comparison - tie
 
     const compareChoice = (playerChoice, cpuChoice) => {
@@ -49,9 +56,13 @@ const game = () => {
         if (playerChoice === 'swordsman') {
             if (cpuChoice === 'archers' || cpuChoice === 'catapult') {
                 winner.textContent = 'Player Wins';
+                pScore++;
+                updateScore();
                 return;
             } else if (cpuChoice === 'cavalry' || cpuChoice === 'spearman') {
                 winner.textContent = 'Cpu Wins';
+                cScore++
+                updateScore();
                 return;
             }
         }
@@ -60,9 +71,13 @@ const game = () => {
         if (playerChoice === 'archers') {
             if (cpuChoice === 'spearman' || cpuChoice === 'cavalry') {
                 winner.textContent = 'Player Wins';
+                pScore++;
+                updateScore();
                 return;
             } else if (cpuChoice === 'swordsman' || cpuChoice === 'catapult') {
                 winner.textContent = 'Cpu Wins';
+                cScore++
+                updateScore();
                 return;
             }
         }
@@ -71,9 +86,13 @@ const game = () => {
         if (playerChoice === 'cavalry') {
             if (cpuChoice === 'swordsman' || cpuChoice === 'catapult') {
                 winner.textContent = 'Player Wins';
+                pScore++;
+                updateScore();
                 return;
             } else if (cpuChoice === 'spearman' || cpuChoice === 'archers') {
                 winner.textContent = 'Cpu Wins';
+                cScore++
+                updateScore();
                 return;
             }
         }
@@ -82,9 +101,13 @@ const game = () => {
         if (playerChoice === 'catapult') {
             if (cpuChoice === 'archers' || cpuChoice === 'spearman') {
                 winner.textContent = 'Player Wins';
+                pScore++;
+                updateScore();
                 return;
             } else if (cpuChoice === 'swordsman' || cpuChoice === 'cavalry') {
                 winner.textContent = 'Cpu Wins';
+                cScore++
+                updateScore();
                 return;
             }
         }
@@ -93,9 +116,13 @@ const game = () => {
         if (playerChoice === 'spearman') {
             if (cpuChoice === 'swordsman' || cpuChoice === 'cavalry') {
                 winner.textContent = 'Player Wins';
+                pScore++;
+                updateScore();
                 return;
             } else if (cpuChoice === 'catapult' || cpuChoice === 'archer') {
                 winner.textContent = 'Cpu Wins';
+                cScore++
+                updateScore();
                 return;
             }
         }
