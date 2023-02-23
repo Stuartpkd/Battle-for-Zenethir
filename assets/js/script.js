@@ -109,6 +109,12 @@ const game = () => {
 
 };
 
+//Rules popup function
+
+function togglePopup() {
+    document.getElementById('popup-rules').classList.toggle('active');
+}
+
 //Start the game
 
 game();
