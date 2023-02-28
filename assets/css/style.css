@@ -43,6 +43,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: opactiy 3s ease;
 }
 
 /*Title h1*/
@@ -72,6 +73,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: opactiy 0.7s ease 0.5s;
 }
 
 /*Winner Section*/
