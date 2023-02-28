@@ -12,11 +12,18 @@ body {
 /*Game Section*/
 
 .game-section {
-    display: flex;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: #222;
 }
 
 .score-section {
-    flex-direction: row;
+    color: #fff;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 img {
