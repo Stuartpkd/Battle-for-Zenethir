@@ -9,13 +9,23 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: Josefin Sans;
+    font-size: large;
+}
+
+h2 {
+    font-family: Josefin Sans;
+    color: #222;
+}
+
 /*Game Section*/
 
 .game-section {
-    background: url(/assets/temp/introTest.svg);
+    background: url(/assets/temp/introTest.svg) center center no-repeat;
     height: 100vh;
     width: 100vw;
-    background-color: #222;
+
 }
 
 /*Score Section*/
@@ -32,6 +42,8 @@ body {
 
 .score-section p {
     text-align: center;
+    font-family: Josefin Sans;
+    color: #222;
 }
 
 /*Intro title section*/
@@ -49,7 +61,12 @@ body {
 /*Title h1*/
 
 .title h1 {
-    font-size: x-large;
+    font-size: 3rem;
+}
+
+.title>p {
+    font-family: Josefin Sans;
+    color: #222;
 }
 
 /*Title + match button*/
