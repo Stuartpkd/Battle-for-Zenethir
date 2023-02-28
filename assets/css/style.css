@@ -28,9 +28,13 @@ body {
     align-items: center;
 }
 
+/*Game Section p*/
+
 .score-section p {
     text-align: center;
 }
+
+/*Intro title section*/
 
 .title {
     background-color: aqua;
@@ -41,9 +45,13 @@ body {
     justify-content: space-around;
 }
 
+/*Title h1*/
+
 .title h1 {
     font-size: x-large;
 }
+
+/*Title H1*/
 
 .title button {
     width: 150px;
@@ -54,6 +62,32 @@ body {
     font-size: larger;
     background: chocolate;
     border-radius: 3px;
+}
+
+/*Match section*/
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Winner Section*/
+
+.winner {
+    color: blue;
+    text-align: center;
+    font-size: larger;
+}
+
+/*Winner Section + Choice Section*/
+
+.images,
+.choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 img {
