@@ -72,7 +72,8 @@ h2 {
 /*Title + match button*/
 
 .title button,
-.match button {
+.match button,
+.rules-button {
     width: 150px;
     height: 50px;
     background: none;
@@ -82,6 +83,11 @@ h2 {
     background: #222;
     border-radius: 20px;
     font-family: Josefin Sans;
+}
+
+.rules-button {
+    position: relative;
+    left: 45%;
 }
 
 /*Match section*/
