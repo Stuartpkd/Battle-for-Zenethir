@@ -77,10 +77,11 @@ h2 {
     height: 50px;
     background: none;
     border: none;
-    color: rgba(241, 205, 205, 0.7);
+    color: #fef33b;
     font-size: larger;
-    background: chocolate;
-    border-radius: 3px;
+    background: #222;
+    border-radius: 20px;
+    font-family: Josefin Sans;
 }
 
 /*Match section*/
