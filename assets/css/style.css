@@ -31,7 +31,6 @@ h2 {
 /*Score Section*/
 
 .score-section {
-    color: #fff;
     height: 15vh;
     display: flex;
     justify-content: space-around;
@@ -43,7 +42,7 @@ h2 {
 .score-section p {
     text-align: center;
     font-family: Josefin Sans;
-    color: #222;
+    color: #18060a;
 }
 
 /*Intro title section*/
@@ -103,10 +102,11 @@ h2 {
 /*Winner Section*/
 
 .winner {
-    color: blue;
+    color: #18060a;
     text-align: center;
-    font-size: larger;
+    font-size: 2.5rem;
 }
+
 
 /*Winner Section + Choice Section*/
 
