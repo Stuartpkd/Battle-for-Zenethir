@@ -129,11 +129,6 @@ div.fadeIn {
     pointer-events: all;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-}
-
 /*Pop up styles*/
 .rules .overlay {
     position: fixed;
@@ -151,14 +146,22 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    background: #fff;
+
     width: 450px;
-    height: 220px;
+    height: 600px;
     z-index: 2;
     text-align: center;
     padding: 20px;
-    box-sizing: border-box;
+
 }
+
+.content>img {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10%;
+}
+
+
 
 .rules .close-btn {
     position: absolute;
