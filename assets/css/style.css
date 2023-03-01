@@ -131,6 +131,20 @@ h2 {
     transform: scaleX(-1);
 }
 
+/*Defeat and Victory Popup style*/
+
+.victory-defeat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 450px;
+    height: 600px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
 /*Fade in and Fade out (title)*/
 
 div.fadeOut {
