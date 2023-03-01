@@ -129,12 +129,19 @@ const game = () => {
         }
     };
 
+    function endgame() {
+
+        if (pScore === 5) {
+            const victoryScreen = document.getElementById('popup-victory');
+            victoryScreen.classList.remove('hidden');
+        }
+    };
+
     //Call all inner functions
 
     startGame();
     playGame();
-
-
+    endgame();
 };
 
 //Rules popup function
@@ -143,9 +150,11 @@ function togglePopup() {
     document.getElementById('popup-rules').classList.toggle('active');
 }
 
-function endgame() {
 
-};
+
+
+
+
 
 //Start the game
 
