@@ -22,7 +22,7 @@ h2 {
 /*Game Section*/
 
 .game-section {
-    background: url(/assets/temp/introTest.svg) center center no-repeat;
+    background: url(..//temp/introTest.svg) center center no-repeat;
     height: 100vh;
     width: 100vw;
 
