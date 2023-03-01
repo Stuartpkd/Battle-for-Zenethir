@@ -129,6 +129,8 @@ const game = () => {
         }
     };
 
+
+
     //Call all inner functions
 
     startGame();

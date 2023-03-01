@@ -125,6 +125,12 @@ h2 {
 
 }
 
+
+
+#cpuImage {
+    transform: scaleX(-1);
+}
+
 /*Fade in and Fade out (title)*/
 
 div.fadeOut {
