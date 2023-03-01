@@ -144,13 +144,7 @@ function togglePopup() {
 }
 
 function endgame() {
-    if (pScore = '5') {
-        const gameWin = document.getElementById('popup-victory');
-        gameWin.style.display = '';
-    } else if (cScore = '5') {
-        const gameDefeat = document.getElementById('popup-defeat');
-        gameDefeat.style.display = '';
-    }
+
 };
 
 //Start the game

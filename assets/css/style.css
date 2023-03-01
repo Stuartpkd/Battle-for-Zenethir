@@ -133,16 +133,28 @@ h2 {
 
 /*Defeat and Victory Popup style*/
 
-.victory-defeat {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
+.defeat-image {
     width: 450px;
     height: 600px;
-    z-index: 2;
+    background: url(..//temp/victory.svg) center center no-repeat;
+}
+
+.victory-image {
+    width: 450px;
+    height: 600px;
+    background: url(..//temp/defeat.svg) center center no-repeat;
+}
+
+.victory-defeat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
+}
+
+.hidden {
+    display: none;
 }
 
 /*Fade in and Fade out (title)*/
