@@ -22,10 +22,9 @@ h2 {
 /*Game Section*/
 
 .game-section {
-    background: url(..//temp/introTest.svg) center center no-repeat;
+    background: url(..//temp/background.svg) center center no-repeat;
     height: 100vh;
     width: 100vw;
-
 }
 
 /*Score Section*/
@@ -84,6 +83,8 @@ h2 {
     font-family: Josefin Sans;
 }
 
+
+
 .rules-button {
     position: relative;
     left: 45%;
@@ -110,11 +111,18 @@ h2 {
 
 /*Winner Section + Choice Section*/
 
-.images,
-.choices {
+.images {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
 
 /*Fade in and Fade out (title)*/
