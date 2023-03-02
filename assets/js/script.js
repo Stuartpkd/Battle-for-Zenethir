@@ -13,6 +13,8 @@ const game = () => {
         });
     };
 
+
+
     //Play Game
     const playGame = () => {
         const choices = document.querySelectorAll('.choices button');
@@ -37,6 +39,8 @@ const game = () => {
         });
     };
 
+
+
     const updateScore = () => {
         const playerScore = document.querySelector('.player-score p');
         const cpuScore = document.querySelector('.cpu-score p');
@@ -48,11 +52,27 @@ const game = () => {
         if (pScore === 5) {
             const victoryScreen = document.getElementById('popup-victory');
             victoryScreen.classList.remove('hidden');
+
         } else if (cScore === 5) {
             const defeatScreen = document.getElementById('popup-defeat');
             defeatScreen.classList.remove('hidden');
+
         }
     };
+
+
+    const playAgain = () => {
+        const playAgainBtn = document.getElementsByClassName('play-again');
+
+        playAgainBtn.addEventListener('click', () => {
+            const victoryScreen = document.getElementById('popup-victory');
+            victoryScreen.classList.add('hidden');
+            const defeatScreen = document.getElementById('popup-defeat');
+            defeatScreen.classList.add('hidden');
+            startGame();
+        });
+    };
+
 
     //Choice Comparison - tie
 
@@ -149,12 +169,11 @@ const game = () => {
         }
     };
 
-
-
     //Call all inner functions
 
     startGame();
     playGame();
+    playAgain();
 };
 
 //Rules popup function
@@ -162,12 +181,6 @@ const game = () => {
 function togglePopup() {
     document.getElementById('popup-rules').classList.toggle('active');
 }
-
-
-
-
-
-
 
 //Start the game
 

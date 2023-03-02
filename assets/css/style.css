@@ -47,7 +47,6 @@ h2 {
 /*Intro title section*/
 
 .title {
-
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -71,7 +70,8 @@ h2 {
 
 .title button,
 .match button,
-.rules-button {
+.rules-button,
+.defeat-image button {
     width: 150px;
     height: 50px;
     background: none;
@@ -154,6 +154,10 @@ h2 {
 }
 
 .hidden {
+    display: none;
+}
+
+.hide {
     display: none;
 }
 
