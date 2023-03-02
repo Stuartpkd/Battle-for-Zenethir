@@ -72,8 +72,8 @@ h2 {
 .match button,
 .rules-button,
 .defeat-image button {
-    width: 150px;
-    height: 50px;
+    width: 8rem;
+    height: 3rem;
     background: none;
     border: none;
     color: #fef33b;
@@ -118,10 +118,9 @@ h2 {
 }
 
 .choices {
-    display: flex;
+    display: inline;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
+
 
 }
 
@@ -229,4 +228,18 @@ div.fadeIn {
 
 .rules.active .content {
     transform: translate(-50%, -50%) scale(1);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1315px) {
+
+    .title button,
+    .match button,
+    .rules-button,
+    .defeat-image button {
+        width: 6rem;
+        height: 3rem;
+        font-size: medium;
+    }
 }
