@@ -136,13 +136,13 @@ h2 {
 .defeat-image {
     width: 450px;
     height: 600px;
-    background: url(..//temp/victory.svg) center center no-repeat;
+    background: url(..//temp/defeat.svg) center center no-repeat;
 }
 
 .victory-image {
     width: 450px;
     height: 600px;
-    background: url(..//temp/defeat.svg) center center no-repeat;
+    background: url(..//temp/victory.svg) center center no-repeat;
 }
 
 .victory-defeat {

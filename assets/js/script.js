@@ -48,6 +48,9 @@ const game = () => {
         if (pScore === 5) {
             const victoryScreen = document.getElementById('popup-victory');
             victoryScreen.classList.remove('hidden');
+        } else if (cScore === 5) {
+            const defeatScreen = document.getElementById('popup-defeat');
+            defeatScreen.classList.remove('hidden');
         }
     };
 
