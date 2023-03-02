@@ -44,6 +44,13 @@ const game = () => {
         cpuScore.textContent = cScore;
     }
 
+    function endgame() {
+        if (pScore === 5) {
+            const victoryScreen = document.getElementById('popup-victory');
+            victoryScreen.classList.remove('hidden');
+        }
+    };
+
     //Choice Comparison - tie
 
     const compareChoice = (playerChoice, cpuChoice) => {
@@ -59,11 +66,13 @@ const game = () => {
                 winner.textContent = 'Player Wins';
                 pScore++;
                 updateScore();
+                endgame();
                 return;
             } else if (cpuChoice === 'cavalry' || cpuChoice === 'spearman') {
                 winner.textContent = 'Cpu Wins';
                 cScore++
                 updateScore();
+                endgame();
                 return;
             }
         }
@@ -74,11 +83,13 @@ const game = () => {
                 winner.textContent = 'Player Wins';
                 pScore++;
                 updateScore();
+                endgame();
                 return;
             } else if (cpuChoice === 'swordsman' || cpuChoice === 'catapult') {
                 winner.textContent = 'Cpu Wins';
                 cScore++
                 updateScore();
+                endgame();
                 return;
             }
         }
@@ -89,11 +100,13 @@ const game = () => {
                 winner.textContent = 'Player Wins';
                 pScore++;
                 updateScore();
+                endgame();
                 return;
             } else if (cpuChoice === 'spearman' || cpuChoice === 'archers') {
                 winner.textContent = 'Cpu Wins';
                 cScore++
                 updateScore();
+                endgame();
                 return;
             }
         }
@@ -104,11 +117,13 @@ const game = () => {
                 winner.textContent = 'Player Wins';
                 pScore++;
                 updateScore();
+                endgame();
                 return;
             } else if (cpuChoice === 'swordsman' || cpuChoice === 'cavalry') {
                 winner.textContent = 'Cpu Wins';
                 cScore++
                 updateScore();
+                endgame();
                 return;
             }
         }
@@ -119,29 +134,24 @@ const game = () => {
                 winner.textContent = 'Player Wins';
                 pScore++;
                 updateScore();
+                endgame();
                 return;
             } else if (cpuChoice === 'catapult' || cpuChoice === 'archer') {
                 winner.textContent = 'Cpu Wins';
                 cScore++
                 updateScore();
+                endgame();
                 return;
             }
         }
     };
 
-    function endgame() {
 
-        if (pScore === 5) {
-            const victoryScreen = document.getElementById('popup-victory');
-            victoryScreen.classList.remove('hidden');
-        }
-    };
 
     //Call all inner functions
 
     startGame();
     playGame();
-    endgame();
 };
 
 //Rules popup function
