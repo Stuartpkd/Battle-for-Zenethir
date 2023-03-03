@@ -284,8 +284,19 @@ div.fadeIn {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .choices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height: 80px;
+    }
+}
+
 @media screen and (min-width: 300px) {
     .title h1 {
         font-size: 6.5vw;
     }
+
+
 }
