@@ -1,6 +1,7 @@
 const game = () => {
     let pScore = 0;
     let cScore = 0;
+    let playAgainEventHandlerApplied = false;
 
     const startGame = () => {
         const playBtn = document.querySelector('.title button');
@@ -48,32 +49,50 @@ const game = () => {
         cpuScore.textContent = cScore;
     };
 
+    function playAgain() {
+        startGame();
+        const gameScreen = document.getElementById('game-screen');
+        gameScreen.classList.remove('hidden');
+
+    };
+
     function endgame() {
         if (pScore === 5) {
             const victoryScreen = document.getElementById('popup-victory');
             victoryScreen.classList.remove('hidden');
+            const gameScreen = document.getElementById('game-screen');
+            gameScreen.classList.add('hidden');
 
         } else if (cScore === 5) {
             const defeatScreen = document.getElementById('popup-defeat');
             defeatScreen.classList.remove('hidden');
-
+            const gameScreen = document.getElementById('game-screen');
+            gameScreen.classList.add('hidden');
         }
-
-
+        if (!playAgainEventHandlerApplied) {
+            const playAgainBtnWin = document.getElementById('play-again-victory');
+            playAgainBtnWin.addEventListener('click', () => {
+                const victoryScreen = document.getElementById('popup-victory');
+                victoryScreen.classList.add('hidden');
+                const defeatScreen = document.getElementById('popup-defeat');
+                defeatScreen.classList.add('hidden');
+                playAgain();
+            });
+            const playAgainBtnLose = document.getElementById('play-again');
+            playAgainBtnLose.addEventListener('click', () => {
+                const victoryScreen = document.getElementById('popup-victory');
+                victoryScreen.classList.add('hidden');
+                const defeatScreen = document.getElementById('popup-defeat');
+                defeatScreen.classList.add('hidden');
+                playAgain();
+            });
+            // Prevent repeated event handler addition at the end of the next match
+            playAgainEventHandlerApplied = true;
+        }
     };
 
 
-    const playAgain = () => {
-        const playAgainBtn = document.getElementsByClassName('play-again');
 
-        playAgainBtn.addEventListener('click', () => {
-            const victoryScreen = document.getElementById('popup-victory');
-            victoryScreen.classList.add('hidden');
-            const defeatScreen = document.getElementById('popup-defeat');
-            defeatScreen.classList.add('hidden');
-            startGame();
-        });
-    };
 
 
     //Choice Comparison - tie
@@ -175,7 +194,7 @@ const game = () => {
 
     startGame();
     playGame();
-    playAgain();
+
 };
 
 //Rules popup function

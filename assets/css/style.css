@@ -56,7 +56,7 @@ h2 {
     align-items: center;
     justify-content: space-around;
     transition: opactiy 3s ease;
-
+    font-size: 2rem;
 }
 
 /*Title h1*/
@@ -72,10 +72,9 @@ h2 {
 
 /*Title + match button*/
 
-.title button,
 .match button,
-.rules-button,
-.defeat-image button {
+.defeat-image button,
+.victory-image button {
     width: 8rem;
     height: 3rem;
     background: none;
@@ -87,7 +86,29 @@ h2 {
     font-family: Josefin Sans;
 }
 
+.rules-button {
+    width: 10rem;
+    height: 4rem;
+    background: none;
+    border: none;
+    color: #f1fbfe;
+    font-size: larger;
+    background: #333f4c;
+    border-radius: 20px;
+    font-family: Josefin Sans;
+}
 
+.title button {
+    width: 12rem;
+    height: 5rem;
+    background: none;
+    border: none;
+    color: #f1fbfe;
+    font-size: larger;
+    background: #333f4c;
+    border-radius: 20px;
+    font-family: Josefin Sans;
+}
 
 .rules-div {
     display: flex;
@@ -96,6 +117,11 @@ h2 {
     position: relative;
     bottom: 8rem;
     right: 2rem;
+}
+
+button:hover {
+    color: #daf0f7;
+    background-color: #48596b;
 }
 
 /*Match section*/
@@ -237,6 +263,8 @@ div.fadeIn {
 .rules.active .content {
     transform: translate(-50%, -50%) scale(1);
 }
+
+
 
 /* Media Queries */
 
