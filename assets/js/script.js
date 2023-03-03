@@ -10,7 +10,7 @@ const game = () => {
 
         playBtn.addEventListener('click', () => {
             startScreen.classList.add("fadeOut");
-            match.classList.add("fadeIn")
+            match.classList.add("fadeIn");
         });
     };
 
@@ -86,6 +86,13 @@ const game = () => {
                 defeatScreen.classList.add('hidden');
                 playAgain();
             });
+            const quitWin = document.getElementById('quit-victory')
+            quitWin.addEventListener('click', () => {
+                const victoryScreen = document.getElementById('popup-victory');
+                victoryScreen.classList.add('hidden');
+                const defeatScreen = document.getElementById('popup-defeat');
+                defeatScreen.classList.add('hidden');
+            });
             // Prevent repeated event handler addition at the end of the next match
             playAgainEventHandlerApplied = true;
         }
@@ -114,7 +121,7 @@ const game = () => {
                 return;
             } else if (cpuChoice === 'cavalry' || cpuChoice === 'spearman') {
                 winner.textContent = 'Cpu Wins';
-                cScore++
+                cScore++;
                 updateScore();
                 endgame();
                 return;
@@ -131,7 +138,7 @@ const game = () => {
                 return;
             } else if (cpuChoice === 'swordsman' || cpuChoice === 'catapult') {
                 winner.textContent = 'Cpu Wins';
-                cScore++
+                cScore++;
                 updateScore();
                 endgame();
                 return;
@@ -148,7 +155,7 @@ const game = () => {
                 return;
             } else if (cpuChoice === 'spearman' || cpuChoice === 'archers') {
                 winner.textContent = 'Cpu Wins';
-                cScore++
+                cScore++;
                 updateScore();
                 endgame();
                 return;
@@ -165,7 +172,7 @@ const game = () => {
                 return;
             } else if (cpuChoice === 'swordsman' || cpuChoice === 'cavalry') {
                 winner.textContent = 'Cpu Wins';
-                cScore++
+                cScore++;
                 updateScore();
                 endgame();
                 return;
@@ -182,7 +189,7 @@ const game = () => {
                 return;
             } else if (cpuChoice === 'catapult' || cpuChoice === 'archer') {
                 winner.textContent = 'Cpu Wins';
-                cScore++
+                cScore++;
                 updateScore();
                 endgame();
                 return;

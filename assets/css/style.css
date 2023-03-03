@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 h1 {
@@ -23,8 +24,7 @@ h2 {
 
 .game-section {
     background: url(..//temp/background.svg) center center no-repeat;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
 }
 
 /*Score Section*/
@@ -264,6 +264,10 @@ div.fadeIn {
     transform: translate(-50%, -50%) scale(1);
 }
 
+.reveal {
+    display: block;
+}
+
 
 
 /* Media Queries */
@@ -277,5 +281,11 @@ div.fadeIn {
         width: 6rem;
         height: 3rem;
         font-size: medium;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .title h1 {
+        font-size: 6.5vw;
     }
 }
