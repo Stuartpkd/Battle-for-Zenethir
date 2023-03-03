@@ -76,18 +76,19 @@ h2 {
     height: 3rem;
     background: none;
     border: none;
-    color: #fef33b;
+    color: #f1fbfe;
     font-size: larger;
-    background: #222;
+    background: #333f4c;
     border-radius: 20px;
     font-family: Josefin Sans;
 }
 
 
 
-.rules-button {
-    position: relative;
-    left: 45%;
+.rules-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Match section*/

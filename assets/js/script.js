@@ -46,7 +46,7 @@ const game = () => {
         const cpuScore = document.querySelector('.cpu-score p');
         playerScore.textContent = pScore;
         cpuScore.textContent = cScore;
-    }
+    };
 
     function endgame() {
         if (pScore === 5) {
@@ -58,6 +58,8 @@ const game = () => {
             defeatScreen.classList.remove('hidden');
 
         }
+
+
     };
 
 
