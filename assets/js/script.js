@@ -102,6 +102,8 @@ const game = () => {
                 match.classList.remove('fadeIn');
                 const resetScreen = document.getElementById('game-screen');
                 resetScreen.classList.remove('hidden')
+                const titleScreen = document.getElementById('title-screen');
+                titleScreen.classList.remove('fadeOut')
 
             });
             const quitLose = document.getElementById('quit-defeat');
@@ -114,7 +116,8 @@ const game = () => {
                 match.classList.remove('fadeIn');
                 const resetScreen = document.getElementById('game-screen');
                 resetScreen.classList.remove('hidden')
-
+                const titleScreen = document.getElementById('title-screen');
+                titleScreen.classList.remove('fadeOut')
             });
             // Prevent repeated event handler addition at the end of the next match
             playAgainEventHandlerApplied = true;
