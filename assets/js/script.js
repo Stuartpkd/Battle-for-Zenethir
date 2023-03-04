@@ -53,6 +53,12 @@ const game = () => {
         startGame();
         const gameScreen = document.getElementById('game-screen');
         gameScreen.classList.remove('hidden');
+        const playerScore = document.querySelector('.player-score p');
+        const cpuScore = document.querySelector('.cpu-score p');
+        playerScore.textContent = 0;
+        cpuScore.textContent = 0;
+        const winner = document.querySelector('.winner');
+        winner.textContent = 'Choose an option';
 
     };
 
