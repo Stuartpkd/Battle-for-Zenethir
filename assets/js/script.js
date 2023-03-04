@@ -98,6 +98,11 @@ const game = () => {
                 victoryScreen.classList.add('hidden');
                 const defeatScreen = document.getElementById('popup-defeat');
                 defeatScreen.classList.add('hidden');
+                const match = document.getElementById('match-screen');
+                match.classList.remove('fadeIn');
+                const resetScreen = document.getElementById('game-screen');
+                resetScreen.classList.remove('hidden')
+
             });
             const quitLose = document.getElementById('quit-defeat');
             quitLose.addEventListener('click', () => {
@@ -105,6 +110,11 @@ const game = () => {
                 victoryScreen.classList.add('hidden');
                 const defeatScreen = document.getElementById('popup-defeat');
                 defeatScreen.classList.add('hidden');
+                const match = document.getElementById('match-screen');
+                match.classList.remove('fadeIn');
+                const resetScreen = document.getElementById('game-screen');
+                resetScreen.classList.remove('hidden')
+
             });
             // Prevent repeated event handler addition at the end of the next match
             playAgainEventHandlerApplied = true;
