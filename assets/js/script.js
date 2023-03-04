@@ -99,6 +99,13 @@ const game = () => {
                 const defeatScreen = document.getElementById('popup-defeat');
                 defeatScreen.classList.add('hidden');
             });
+            const quitLose = document.getElementById('quit-defeat');
+            quitLose.addEventListener('click', () => {
+                const victoryScreen = document.getElementById('popup-victory');
+                victoryScreen.classList.add('hidden');
+                const defeatScreen = document.getElementById('popup-defeat');
+                defeatScreen.classList.add('hidden');
+            });
             // Prevent repeated event handler addition at the end of the next match
             playAgainEventHandlerApplied = true;
         }
