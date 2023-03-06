@@ -55,6 +55,8 @@ const game = () => {
         gameScreen.classList.remove('hidden');
         const playerScore = document.querySelector('.player-score p');
         const cpuScore = document.querySelector('.cpu-score p');
+        pScore = 0;
+        cScore = 0;
         playerScore.textContent = 0;
         cpuScore.textContent = 0;
         const winner = document.querySelector('.winner');
