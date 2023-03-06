@@ -7,10 +7,13 @@ const game = () => {
         const playBtn = document.querySelector('.title button');
         const startScreen = document.querySelector('.title');
         const match = document.querySelector('.match');
+        const scoreScreenAppear = document.getElementById('score-screen');
+
 
         playBtn.addEventListener('click', () => {
             startScreen.classList.add("fadeOut");
             match.classList.add("fadeIn");
+            scoreScreenAppear.classList.remove('hidden');
         });
     };
 
@@ -61,7 +64,6 @@ const game = () => {
         cpuScore.textContent = 0;
         const winner = document.querySelector('.winner');
         winner.textContent = 'Choose an option';
-
     };
 
     function endgame() {
@@ -106,6 +108,16 @@ const game = () => {
                 resetScreen.classList.remove('hidden')
                 const titleScreen = document.getElementById('title-screen');
                 titleScreen.classList.remove('fadeOut')
+                const playerScore = document.querySelector('.player-score p');
+                const cpuScore = document.querySelector('.cpu-score p');
+                pScore = 0;
+                cScore = 0;
+                playerScore.textContent = 0;
+                cpuScore.textContent = 0;
+                const winner = document.querySelector('.winner');
+                winner.textContent = 'Choose an option';
+                const scoreScreen = document.getElementById('score-screen');
+                scoreScreen.classList.add('hidden');
 
             });
             const quitLose = document.getElementById('quit-defeat');
@@ -120,6 +132,16 @@ const game = () => {
                 resetScreen.classList.remove('hidden')
                 const titleScreen = document.getElementById('title-screen');
                 titleScreen.classList.remove('fadeOut')
+                const playerScore = document.querySelector('.player-score p');
+                const cpuScore = document.querySelector('.cpu-score p');
+                pScore = 0;
+                cScore = 0;
+                playerScore.textContent = 0;
+                cpuScore.textContent = 0;
+                const winner = document.querySelector('.winner');
+                winner.textContent = 'Choose an option';
+                const scoreScreen = document.getElementById('score-screen');
+                scoreScreen.classList.add('hidden');
             });
             // Prevent repeated event handler addition at the end of the next match
             playAgainEventHandlerApplied = true;
