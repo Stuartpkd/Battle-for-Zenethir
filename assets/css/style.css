@@ -196,6 +196,10 @@ button:hover {
     display: none;
 }
 
+.hidden-score {
+    opacity: 0;
+}
+
 .hide {
     display: none;
 }
@@ -311,6 +315,4 @@ div.fadeIn {
     .title h1 {
         font-size: 6.5vw;
     }
-
-
 }

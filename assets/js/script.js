@@ -13,7 +13,7 @@ const game = () => {
         playBtn.addEventListener('click', () => {
             startScreen.classList.add("fadeOut");
             match.classList.add("fadeIn");
-            scoreScreenAppear.classList.remove('hidden');
+            scoreScreenAppear.classList.remove('hidden-score');
         });
     };
 
@@ -117,7 +117,7 @@ const game = () => {
                 const winner = document.querySelector('.winner');
                 winner.textContent = 'Choose an option';
                 const scoreScreen = document.getElementById('score-screen');
-                scoreScreen.classList.add('hidden');
+                scoreScreen.classList.add('hidden-score');
 
             });
             const quitLose = document.getElementById('quit-defeat');
@@ -141,7 +141,7 @@ const game = () => {
                 const winner = document.querySelector('.winner');
                 winner.textContent = 'Choose an option';
                 const scoreScreen = document.getElementById('score-screen');
-                scoreScreen.classList.add('hidden');
+                scoreScreen.classList.add('hidden-score');
             });
             // Prevent repeated event handler addition at the end of the next match
             playAgainEventHandlerApplied = true;
