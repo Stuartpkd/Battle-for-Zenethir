@@ -84,9 +84,9 @@ img {
     height: 3rem;
     background: none;
     border: none;
-    color: #f1fbfe;
+    color: #222;
     font-size: larger;
-    background: #333f4c;
+    background: #f5d582;
     border-radius: 20px;
     font-family: Josefin Sans;
 }
@@ -96,9 +96,9 @@ img {
     height: 4rem;
     background: none;
     border: none;
-    color: #f1fbfe;
+    color: #222;
     font-size: larger;
-    background: #333f4c;
+    background: #f5d582;
     border-radius: 20px;
     font-family: Josefin Sans;
 }
@@ -108,9 +108,9 @@ img {
     height: 5rem;
     background: none;
     border: none;
-    color: #f1fbfe;
+    color: #222;
     font-size: larger;
-    background: #333f4c;
+    background: #f5d582;
     border-radius: 20px;
     font-family: Josefin Sans;
 }
@@ -125,8 +125,8 @@ img {
 }
 
 button:hover {
-    color: #daf0f7;
-    background-color: #48596b;
+    color: #222;
+    background-color: #f2dba3;
 }
 
 /*Match section*/
@@ -142,7 +142,7 @@ button:hover {
 /*Winner Section*/
 
 .winner {
-    color: #18060a;
+    color: #222;
     text-align: center;
     font-size: 2.5rem;
 }
@@ -252,8 +252,8 @@ div.fadeIn {
     top: 20px;
     width: 30px;
     height: 30px;
-    background: #222;
-    color: #fff;
+    background: #f5d582;
+    color: #222;
     font-size: 25px;
     font-weight: 600;
     line-height: 30px;
