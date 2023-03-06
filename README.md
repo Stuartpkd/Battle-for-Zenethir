@@ -33,3 +33,28 @@ User goal's:
 # UX / UI
 
 ## Strategy 
+
+After thinking about the strategy for my site. I came up with a target audience, which would influence the features included.
+
+### Target users:
+
+1. 18-40 years old.
+2. Interested in RTS (Real Time strategy) games.
+3. People interested in probability.
+4. People interested in fantasy settings.
+5. People interested in appealing art styles.
+
+### What the user would look for:
+
+* Easy to understand and visually appealing art style.
+* A simple and clean site (Easy to navigate).
+* An addictive game loop.
+* An easy to understand list of rules.
+
+I really love simple and clean webstie designs, so I tried to achieve that with mine. The artwork is flat and doesnt try to call to much attention to itself. The UI is simple and stands out against the background. With the simple layout it helps when making it responsive for mobile and tablet users.
+
+## Scope
+
+To help the user achieve their desired experience, these features were included:
+
+* 
