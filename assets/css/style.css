@@ -279,6 +279,21 @@ div.fadeIn {
 }
 
 
+@keyframes attackRight {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 20px;
+    }
+}
+
+.attackRight {
+    animation: linear;
+    animation-name: attackRight;
+    animation-duration: 2s;
+}
 
 /* Media Queries */
 

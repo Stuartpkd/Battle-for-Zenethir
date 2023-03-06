@@ -35,6 +35,7 @@ const game = () => {
                 const cpuChoice = computerChoices[computerNumber];
                 //Compare Choices
                 compareChoice(this.textContent.toLowerCase(), cpuChoice);
+                playerImage.classList.add('attackRight');
                 //Update Images
                 playerImage.src = './assets/temp/' + this.textContent.toLowerCase() + '.svg';
                 cpuImage.src = './assets/temp/' + cpuChoice + '.svg';
