@@ -162,8 +162,6 @@ button:hover {
 .choices {
     display: inline;
     align-items: center;
-
-
 }
 
 
@@ -174,16 +172,21 @@ button:hover {
 
 /*Defeat and Victory Popup style*/
 
-.defeat-image {
+#popup-victory {
+
+    background: url(..//svg/win.svg) center center no-repeat;
     min-height: 100vh;
-    min-width: 100vw;
-    background: url(..//svg/lose.svg) center center no-repeat;
+    object-fit: fill;
+    background-size: cover;
 }
 
-.victory-image {
+#popup-defeat {
+
+
+    background: url(..//svg/lose.svg) center center no-repeat;
     min-height: 100vh;
-    min-width: 100vw;
-    background: url(..//svg/win.svg) center center no-repeat;
+    object-fit: fill;
+    background-size: cover;
 }
 
 .victory-defeat {

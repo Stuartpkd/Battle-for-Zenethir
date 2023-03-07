@@ -22,8 +22,6 @@ const game = () => {
         });
     };
 
-
-
     //Play Game
     const playGame = () => {
         const choices = document.querySelectorAll('.choices button');
