@@ -42,8 +42,8 @@ const game = () => {
                 compareChoice(this.textContent.toLowerCase(), cpuChoice);
                 playerImage.classList.add('attackRight');
                 //Update Images
-                playerImage.src = './assets/temp/' + this.textContent.toLowerCase() + '.svg';
-                cpuImage.src = './assets/temp/' + cpuChoice + '.svg';
+                playerImage.src = './assets/svg/' + this.textContent.toLowerCase() + '.svg';
+                cpuImage.src = './assets/svg/' + cpuChoice + '.svg';
 
             });
         });
