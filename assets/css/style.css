@@ -174,11 +174,13 @@ button:hover {
 
 .defeat-image {
     min-height: 100vh;
+    min-width: 100vw;
     background: url(..//svg/lose.svg) center center no-repeat;
 }
 
 .victory-image {
     min-height: 100vh;
+    min-width: 100vw;
     background: url(..//svg/win.svg) center center no-repeat;
 }
 
