@@ -1,7 +1,11 @@
+//Main function container
+
 const game = () => {
     let pScore = 0;
     let cScore = 0;
     let playAgainEventHandlerApplied = false;
+
+    //Start game 
 
     const startGame = () => {
         const playBtn = document.querySelector('.title button');
@@ -9,6 +13,7 @@ const game = () => {
         const match = document.querySelector('.match');
         const scoreScreenAppear = document.getElementById('score-screen');
 
+        //Play button
 
         playBtn.addEventListener('click', () => {
             startScreen.classList.add("fadeOut");
@@ -44,7 +49,7 @@ const game = () => {
         });
     };
 
-
+    //Updates score
 
     const updateScore = () => {
         const playerScore = document.querySelector('.player-score p');
@@ -52,6 +57,8 @@ const game = () => {
         playerScore.textContent = pScore;
         cpuScore.textContent = cScore;
     };
+
+    //Play again
 
     function playAgain() {
         startGame();
@@ -67,6 +74,8 @@ const game = () => {
         winner.textContent = 'Choose an option';
     };
 
+    //Win or lose screens.
+
     function endgame() {
         if (pScore === 5) {
             const victoryScreen = document.getElementById('popup-victory');
@@ -80,6 +89,9 @@ const game = () => {
             const gameScreen = document.getElementById('game-screen');
             gameScreen.classList.add('hidden');
         }
+
+        //Play again
+
         if (!playAgainEventHandlerApplied) {
             const playAgainBtnWin = document.getElementById('play-again-victory');
             playAgainBtnWin.addEventListener('click', () => {
@@ -97,6 +109,9 @@ const game = () => {
                 defeatScreen.classList.add('hidden');
                 playAgain();
             });
+
+            //Quit game
+
             const quitWin = document.getElementById('quit-victory')
             quitWin.addEventListener('click', () => {
                 const victoryScreen = document.getElementById('popup-victory');
