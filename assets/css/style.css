@@ -30,6 +30,8 @@ img {
 .game-section {
     background: url(..//svg/title.svg) center center no-repeat;
     min-height: 100vh;
+    object-fit: fill;
+    background-size: cover;
 }
 
 /*Score Section*/
