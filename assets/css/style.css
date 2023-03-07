@@ -28,7 +28,7 @@ img {
 /*Game Section*/
 
 .game-section {
-    background: url(..//temp/background.svg) center center no-repeat;
+    background: url(..//svg/title.svg) center center no-repeat;
     min-height: 100vh;
 }
 
@@ -173,15 +173,13 @@ button:hover {
 /*Defeat and Victory Popup style*/
 
 .defeat-image {
-    width: 450px;
-    height: 600px;
-    background: url(..//temp/defeat.svg) center center no-repeat;
+    min-height: 100vh;
+    background: url(..//svg/lose.svg) center center no-repeat;
 }
 
 .victory-image {
-    width: 450px;
-    height: 600px;
-    background: url(..//temp/victory.svg) center center no-repeat;
+    min-height: 100vh;
+    background: url(..//svg/win.svg) center center no-repeat;
 }
 
 .victory-defeat {
