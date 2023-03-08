@@ -68,15 +68,15 @@ h2 {
 
 .title h1 {
     font-size: 5rem;
+
 }
 
 .title h2 {
-    font-size: 4rem;
-    padding-bottom: 20px;
-    position: relative;
-    bottom: 140px;
+    text-align: center;
+    font-size: 4vw;
     color: #18060a;
     font-weight: 400;
+    padding-bottom: 9vh;
 }
 
 .title>p {
@@ -139,6 +139,8 @@ h2 {
     font-family: Josefin Sans;
     color: #f5d582;
     font-size: 1.5rem;
+    position: relative;
+    top: 15px;
 }
 
 button:hover {
@@ -251,7 +253,7 @@ div.fadeIn {
 
 .rules .content {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     width: 450px;
@@ -267,7 +269,14 @@ div.fadeIn {
     border-radius: 10%;
 }
 
+.rules-box {
 
+    background-color: #361731;
+    max-width: 600px;
+    height: 190px;
+    border: solid 5px #f5d582;
+
+}
 
 .rules .close-btn {
     position: absolute;
@@ -350,4 +359,6 @@ div.fadeIn {
     .title h1 {
         font-size: 6.5vw;
     }
+
+
 }
