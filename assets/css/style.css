@@ -359,7 +359,7 @@ div.fadeIn {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-height: 100px;
+        max-height: 200px;
     }
 
     .choices>button {
@@ -386,8 +386,25 @@ div.fadeIn {
         font-size: 1.5rem;
     }
 
+    .match h2 {
+        font-size: 2.1rem;
+    }
+
+    .quit-btn {
+        top: 1rem;
+    }
+
+    .score-section {
+        padding-top: 35px;
+    }
+
+    .rules-div {
+        top: 1rem;
+    }
+
     .score-section p {
         font-size: 1.1rem;
+
     }
 
     .rules-button,
