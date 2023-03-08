@@ -112,6 +112,27 @@ h2 {
     font-family: Josefin Sans;
 }
 
+.quit-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+}
+
+#quit {
+    width: 9rem;
+    height: 3.5rem;
+    background: none;
+    border: none;
+    color: #18060a;
+    font-size: x-large;
+    background: #f5d582;
+    border-radius: 20px;
+    font-family: Josefin Sans;
+}
+
 .title button {
     width: 12rem;
     height: 5rem;
@@ -199,8 +220,6 @@ button:hover {
 }
 
 #popup-defeat {
-
-
     background: url(..//svg/lose.svg) center center no-repeat;
     min-height: 100vh;
     object-fit: fill;
@@ -331,10 +350,11 @@ div.fadeIn {
     .title button,
     .match button,
     .rules-button,
-    .defeat-image button {
-        width: 6rem;
-        height: 3rem;
-        font-size: medium;
+    .defeat-image button,
+    #quit {
+        width: 8rem;
+        height: 3.5rem;
+        font-size: xx-large;
     }
 }
 
@@ -360,5 +380,18 @@ div.fadeIn {
         font-size: 6.5vw;
     }
 
+    .choices {
+        min-width: 8rem;
+        min-height: 3rem;
+    }
 
+    .title button,
+    .match button,
+    .rules-button,
+    .defeat-image button,
+    #quit {
+        width: 6rem;
+        height: 3rem;
+        font-size: x-large;
+    }
 }
