@@ -64,6 +64,34 @@ const game = () => {
         cpuScore.textContent = cScore;
     };
 
+    //Quit game
+
+    function quitGame() {
+        const victoryScreen = document.getElementById('popup-victory');
+        victoryScreen.classList.add('hidden');
+        const defeatScreen = document.getElementById('popup-defeat');
+        defeatScreen.classList.add('hidden');
+        const match = document.getElementById('match-screen');
+        match.classList.remove('fadeIn');
+        const resetScreen = document.getElementById('game-screen');
+        resetScreen.classList.remove('hidden')
+        const titleScreen = document.getElementById('title-screen');
+        titleScreen.classList.remove('fadeOut')
+        const playerScore = document.querySelector('.player-score p');
+        const cpuScore = document.querySelector('.cpu-score p');
+        pScore = 0;
+        cScore = 0;
+        playerScore.textContent = 0;
+        cpuScore.textContent = 0;
+        const winner = document.querySelector('.winner');
+        winner.textContent = 'Choose an option';
+        const scoreScreen = document.getElementById('score-screen');
+        scoreScreen.classList.add('hidden-score');
+    }
+
+    const quitBtn = document.getElementById('quit');
+    quitBtn.addEventListener('click', quitGame);
+
     //Play again
 
     function playAgain() {
