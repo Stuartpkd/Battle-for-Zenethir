@@ -3,6 +3,7 @@
 
 /*Body Styling*/
 
+
 body {
     margin: 0;
     padding: 0;
@@ -20,10 +21,6 @@ h2 {
     color: #222;
 }
 
-img {
-    max-width: 60vw;
-    padding-bottom: 30px;
-}
 
 /*Game Section*/
 
@@ -42,6 +39,11 @@ img {
     justify-content: space-around;
     align-items: center;
     font-size: 1.5rem;
+}
+
+.match-images {
+    max-width: 500px;
+    max-height: 500px;
 }
 
 /*Game Section p*/
@@ -162,6 +164,7 @@ button:hover {
 .choices {
     display: inline;
     align-items: center;
+    max-height: 20px;
 }
 
 
@@ -238,7 +241,6 @@ div.fadeIn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-
     width: 450px;
     height: 600px;
     z-index: 2;
