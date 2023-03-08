@@ -74,7 +74,7 @@ h2 {
 .title h2 {
     text-align: center;
     font-size: 4vw;
-    color: #18060a;
+    color: black;
     font-weight: 400;
     padding-bottom: 9vh;
 }
@@ -86,9 +86,7 @@ h2 {
 
 /*Title + match button*/
 
-.match button,
-.defeat-image button,
-.victory-image button {
+.match button {
     width: 8rem;
     height: 3rem;
     background: none;
@@ -98,6 +96,29 @@ h2 {
     background: #f5d582;
     border-radius: 20px;
     font-family: Josefin Sans;
+}
+
+.gameover-button {
+    width: 12rem;
+    height: 5rem;
+    color: #18060a;
+    font-size: larger;
+    background: #f5d582;
+    border: none;
+    border-radius: 20px;
+    font-family: Josefin sans;
+}
+
+#play-again-victory {
+    position: relative;
+    bottom: 200px;
+    right: 40px;
+}
+
+#quit-victory {
+    position: relative;
+    bottom: 200px;
+    left: 40px;
 }
 
 .rules-button {
@@ -234,6 +255,32 @@ button:hover {
     text-align: center;
 }
 
+
+
+.defeat-image>button {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.6rem;
+}
+
+.victory-defeat h2 {
+    font-size: 4rem;
+    position: relative;
+    bottom: 320px;
+}
+
+#play-again {
+    position: relative;
+    bottom: 200px;
+    right: 40px;
+}
+
+#quit-defeat {
+    position: relative;
+    bottom: 200px;
+    left: 40px;
+}
+
 .hidden {
     display: none;
 }
@@ -275,11 +322,12 @@ div.fadeIn {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    width: 450px;
-    height: 600px;
+    min-width: 250px;
+
     z-index: 2;
     text-align: center;
     padding: 20px;
+    max-width: 300px;
 }
 
 .content>img {
@@ -292,7 +340,7 @@ div.fadeIn {
 
     background-color: #361731;
     max-width: 600px;
-    height: 190px;
+    height: 250px;
     border: solid 5px #f5d582;
 
 }
@@ -378,9 +426,11 @@ div.fadeIn {
         height: 3rem;
         font-size: large;
     }
-}
 
-@media screen and (max-width: 1000px) {
+    .defeat-image {
+        display: flex;
+        flex-direction: column;
+    }
 
     .score-section h2 {
         font-size: 1.5rem;
@@ -411,6 +461,41 @@ div.fadeIn {
     #quit {
         width: 6rem;
         height: 2rem;
+    }
+
+    .begin {
+        position: absolute;
+        bottom: 100px;
+    }
+
+    #quit-victory {
+        position: relative;
+        bottom: 100px;
+        left: 40px;
+    }
+
+    #play-again-victory {
+        position: relative;
+        bottom: 150px;
+        left: 40px;
+    }
+
+    #play-again {
+        position: relative;
+        bottom: 150px;
+        left: 40px;
+    }
+
+    #quit-defeat {
+        position: relative;
+        bottom: 100px;
+        left: 40px;
+    }
+
+    .victory-defeat h2 {
+        font-size: 4rem;
+        position: relative;
+        bottom: 250px;
     }
 }
 
