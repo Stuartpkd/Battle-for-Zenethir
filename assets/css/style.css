@@ -346,18 +346,12 @@ div.fadeIn {
 /* Media Queries */
 
 @media screen and (max-width: 1315px) {
+    .choices {
+        display: flex;
 
-    .title button,
-    .match button,
-    .rules-button,
-    .defeat-image button,
-    #quit {
-        width: 8rem;
-        height: 3.5rem;
-        font-size: xx-large;
+        justify-content: center;
+        max-height: 100px;
     }
-
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -386,26 +380,25 @@ div.fadeIn {
     }
 }
 
+@media screen and (max-width: 1000px) {
 
+    .score-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .score-section p {
+        font-size: 1.1rem;
+    }
+
+    .rules-button,
+    #quit {
+        width: 6rem;
+        height: 2rem;
+    }
+}
 
 @media screen and (min-width: 300px) {
     .title h1 {
         font-size: 6.5vw;
     }
-
-    .choices {
-        min-width: 8rem;
-        min-height: 3rem;
-    }
-
-    .title button,
-    .match button,
-    .rules-button,
-    .defeat-image button,
-    #quit {
-        width: 5.5rem;
-        height: 2rem;
-        font-size: smaller;
-    }
-
 }
