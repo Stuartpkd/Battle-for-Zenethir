@@ -7,6 +7,8 @@ const game = () => {
 
     //Start game 
 
+    const slogans = ["Have at thee!", "It's a dangerous business, going out your door", "Test your might", "To arms men!", "We shall fight in the shade", "Look to my coming, on the first light", "You shall not pass!", "It's only a flesh wound", "Speak friend and enter", "Do you want to live forever?"]
+
     const startGame = () => {
         const playBtn = document.querySelector('.title button');
         const startScreen = document.querySelector('.title');
