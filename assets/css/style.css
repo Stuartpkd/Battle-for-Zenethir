@@ -153,7 +153,7 @@ h2 {
     justify-content: flex-end;
     position: absolute;
     top: 5rem;
-    right: 5rem;
+    right: 1rem;
 }
 
 .rules p {
@@ -356,6 +356,8 @@ div.fadeIn {
         height: 3.5rem;
         font-size: xx-large;
     }
+
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -373,7 +375,18 @@ div.fadeIn {
     }
 
 
+    .title button,
+    .match button,
+    .rules-button,
+    .defeat-image button,
+    #quit {
+        width: 8rem;
+        height: 3rem;
+        font-size: large;
+    }
 }
+
+
 
 @media screen and (min-width: 300px) {
     .title h1 {
@@ -390,8 +403,9 @@ div.fadeIn {
     .rules-button,
     .defeat-image button,
     #quit {
-        width: 6rem;
-        height: 3rem;
-        font-size: x-large;
+        width: 5.5rem;
+        height: 2rem;
+        font-size: smaller;
     }
+
 }
