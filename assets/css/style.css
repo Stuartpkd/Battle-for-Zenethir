@@ -53,7 +53,6 @@ h2 {
     font-family: Josefin Sans;
     color: #18060a;
     font-size: 2rem;
-
 }
 
 /*Intro title section*/
@@ -78,12 +77,11 @@ h2 {
     bottom: 140px;
     color: #18060a;
     font-weight: 400;
-
 }
 
 .title>p {
     font-family: Josefin Sans;
-    color: #222;
+    color: #18060a;
 }
 
 /*Title + match button*/
@@ -95,7 +93,7 @@ h2 {
     height: 3rem;
     background: none;
     border: none;
-    color: #222;
+    color: #18060a;
     font-size: larger;
     background: #f5d582;
     border-radius: 20px;
@@ -103,12 +101,12 @@ h2 {
 }
 
 .rules-button {
-    width: 10rem;
-    height: 4rem;
+    width: 9rem;
+    height: 3.5rem;
     background: none;
     border: none;
-    color: #222;
-    font-size: larger;
+    color: #18060a;
+    font-size: x-large;
     background: #f5d582;
     border-radius: 20px;
     font-family: Josefin Sans;
@@ -119,12 +117,14 @@ h2 {
     height: 5rem;
     background: none;
     border: none;
-    color: #222;
+    color: #18060a;
     font-size: larger;
     background: #f5d582;
     border-radius: 20px;
     font-family: Josefin Sans;
 }
+
+
 
 .rules-div {
     display: flex;
@@ -135,8 +135,14 @@ h2 {
     right: 5rem;
 }
 
+.rules p {
+    font-family: Josefin Sans;
+    color: #f5d582;
+    font-size: 1.5rem;
+}
+
 button:hover {
-    color: #222;
+    color: #18060a;
     background-color: #f2dba3;
 }
 
@@ -153,7 +159,7 @@ button:hover {
 /*Winner Section*/
 
 .winner {
-    color: #222;
+    color: #18060a;
     text-align: center;
     font-size: 2.5rem;
 }
@@ -238,14 +244,14 @@ div.fadeIn {
     left: 0px;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1;
     display: none;
 }
 
 .rules .content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     width: 450px;
@@ -253,7 +259,6 @@ div.fadeIn {
     z-index: 2;
     text-align: center;
     padding: 20px;
-
 }
 
 .content>img {
@@ -266,18 +271,19 @@ div.fadeIn {
 
 .rules .close-btn {
     position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
+    right: 30px;
+    top: 100px;
+    width: 50px;
+    height: 50px;
     background: #f5d582;
-    color: #222;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 30px;
+    color: #18060a;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 37px;
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
+    font-family: Josefin Sans;
 }
 
 .rules.active .overlay {
