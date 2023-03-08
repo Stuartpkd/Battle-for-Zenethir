@@ -59,12 +59,9 @@ h2 {
 /*Intro title section*/
 
 .title {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    transition: opactiy 3s ease;
     font-size: 2rem;
 }
 
@@ -72,6 +69,16 @@ h2 {
 
 .title h1 {
     font-size: 5rem;
+}
+
+.title h2 {
+    font-size: 4rem;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: 140px;
+    color: #18060a;
+    font-weight: 400;
+
 }
 
 .title>p {
