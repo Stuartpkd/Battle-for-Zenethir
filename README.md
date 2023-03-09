@@ -1,10 +1,10 @@
 # Battle for Zenethir
 
-[Please visit the website here.](https://stuartpkd.github.io/Project-2-RPS/)
+[Please visit the website here.](https://stuartpkd.github.io/Battle-for-Zenethir/)
 
-![An image showing the site on mobile, desktop and tablet]
+[A mock up showing the game on different devices](assets/docs/mock.png)
 
-I created this game to demonstrate my understanding and apptitude in Javascript. I played of lot of real time strategy games throught my life. I always liked the idea of certain units countering others. There always was an aspect of rock paper scissors to it. So I felt rebranding rock paper scissors to have a real time strategy aspect to it would work well.
+I created this game to demonstrate my understanding and aptitude for Javascript. I have played a lot of real-time strategy games throughout my life. I always liked the idea of certain units countering others. There was always an aspect of rock paper scissors to it. So I felt rebranding rock paper scissors to have a real-time strategy aspect to it would work well.
 
 Battle for Zenethir is a single web page made up of these sections:
 
@@ -53,7 +53,7 @@ After thinking about the strategy for my site. I came up with a target audience,
 * An ability to leave the game at any time.
 * A fun game based on probability.
 
-I really love simple and clean webstie designs, so I tried to achieve that with mine. The artwork is flat and doesnt try to call to much attention to itself. The UI is simple and stands out against the background. With the simple layout it helps when making it responsive for mobile and tablet users. 
+I really love simple and clean website designs, so I tried to achieve that with mine. The artwork is flat and doesn't try to call too much attention to itself. The UI is simple and stands out against the background. With the simple layout, it helps when making it responsive for mobile and tablet users. 
 
 ## Scope
 
@@ -68,7 +68,7 @@ To help the user achieve their desired experience, these features were included:
 
 ## Structure 
 
-This is a single web page. It contains the title screen which introduces the player to the theme and setting. The rules sesction which shows the player which unit beats another. As well as an explanation of the game. The quit button gives the player the chance to leave whenever they would like. The choice section presents all of the units that the player and computer will choose in a match. The match section displays images based on the choices of the computer and user. The score section indicates who is winning and who is close to defeating their enemy. Lastly the victory and defeat popups tell the player of their loss or win. 
+This is a single web page. It contains the title screen which introduces the player to the theme and setting. The rules section shows the player which unit beats another. As well as an explanation of the game. The quit button gives the player the chance to leave whenever they like. The choice section presents all of the units that the player and computer will choose in a match. The match section displays images based on the choices of the computer and user. The score section indicates who is winning and who is close to defeating their enemy. Lastly, the victory and defeat popups tell the player of their loss or win. 
 
 The game was intended to have a fun aspect to it. With the simple game loop and the randomly generated slogans. I wanted to be able to dress up a game of rock paper scissors so much. That you would not realise you were playing it anymore.
 
@@ -76,32 +76,30 @@ The game was intended to have a fun aspect to it. With the simple game loop and 
 
 #### Wireframes
 
-[Desktop](assets/docs/desktop.pdf) [Tablet](assets/docs/tablet.pdf) [Mobile](assets/docs/mobile.pdf)
+[Desktop wireframe](assets/docs/desktop.pdf) [Tablet wireframe](assets/docs/tablet.pdf) [Mobile wireframe](assets/docs/mobile.pdf)
 
-Please be aware, the wireframes may not represent the game accurately. As the game was subject to change as I was building it.
-
-I did not want to stray too far away from the wireframes. As they had a clean and imple layout that would make designing it a much easier experience. A few features needed to be added such as a quit button and a more sophisticated rules button. However this did not affect the layout too much.
+Please be aware, the wireframes may not represent the game accurately. As the game was subject to change as I was building it,I did not want to stray too far away from the wireframes. As they had a clean and simple layout, that would make designing it a much easier experience. A few features needed to be added, such as a quit button and a more sophisticated rules button. However, this did not affect the layout too much.
 
 ## Surface
 
-I used a muted colour palette for the main background of the game. It gave a good 'battlefield' effect. But also did not bring too much attention to itself. The units of the game were given a bright vibrant colour palette. As one of the early difficulties was getting them to stand out against the background.
+I used a muted colour palette for the main background of the game. It gave a good 'battlefield' effect. But it also did not bring too much attention to itself. The units of the game were given a bright vibrant colour palette. One of the early difficulties was getting them to stand out in the background.
 
-![alt text](assets/docs/art.png)
+![Image showing some concept art](assets/docs/art.png)
 
 Here are some of the concept art ideas for the game when it was in early development. Use of gradients and color theory can give a good idea of depth in an image without having to animate anything.
 
-![alt text](assets/docs/font.png)
+![Image showing a font selection](assets/docs/font.png)
 
-Lastly I used Josefin Sans as the font for the whole game. I thought it had a great look, but also gave off a good fanatasy element from it.
+Lastly, I used Josefin Sans as the font for the whole game. I thought it had a great look, but also gave off a good fantasy element to it.
 
-![alt text](assets/docs/name.png)
-![alt text](assets/docs/generator.png)
+![A web page showing a random name generator](assets/docs/name.png)
+![Javascript code for a random name generator](assets/docs/generator.png)
 
 The name for this game was created by a random fantasy name generator I created in GitHub. I could not come up with a decent one myself, so I made a function to make one for me.
 
 ## Features
 
-This game was designed with desktop in mind. However, works very well on tablet and mobile. Some mobile users may suffer when it comes to the rules section. A template design was used throughout the game to make sure that the style and layout was consistent.
+This game was designed with a desktop in mind. However, it works very well on tablets and mobile. Some mobile users may suffer when it comes to the rules section. A template design was used throughout the game to make sure that the style and layout was consistent.
 
 ### Quit button
 
@@ -109,15 +107,15 @@ Pretty self explanitory. The button was added to make sure that the user could l
 
 ### Random slogan generator
 
-The title screen has a new slogan beneath it everytime the page is loaded. I thought it added a fun aspect to the game. And could possibly promote the user to return to the game frequently for new phrases.
+The title screen has a new slogan beneath it every time the page is loaded. I thought it added a fun aspect to the game. And could possibly encourage the user to return to the game frequently for new phrases.
 
 ### Rules button
 
-The rules button allows the player to remind themselves of the context and rules of the game. The unit indicator image could use a little work. However explaining the unit heirarchy in text became far too bulky.
+The rules button allows the player to remind themselves of the context and rules of the game. The unit indicator image could use a little work. However, explaining the unit hierarchy in the text became far too bulky.
 
 ### Match section
 
-This section is the bread and butter of the game. A function takes the choices of the player and the computer and compares them. It is laid out to give all of the choices breathing room. But also not too much as to block the immersive artwork in the background. The is another function that updates the images of the match, again based on the choices of the player and the computer. A text call to action allows the player to know who one that round.
+This section is the bread and butter of the game. A function takes the choices of the player and the computer and compares them. It is laid out to give all of the choices breathing room. But also not too much as to block the immersive artwork in the background. The is another function that updates the images of the match, again based on the choices of the player and the computer. A text call to action allows the player to know who won that round.
 
 ### Score section
 
@@ -207,7 +205,7 @@ Code institute slack channels were very important during this project.
 
 1. As a first-time visitor: I want to check the rules of the game.
 
-The rules button is displayed always, apart from when the player has lost or won in the game. It is shown clearly in the top right hand of the screen whenever they need to remind themselves of the rules. The rules popup has an overlay as not to distract the user while they study. Then there is also an x button to return from the rules.
+The rules button is always displayed, apart from when the player has lost or won in the game. It is shown clearly in the top right-hand hand of the screen whenever they need to remind themselves of the rules. The rules popup has an overlay so as not to distract the user while they study. Then there is also an x button to return from the rules.
 
 ![alt text](assets/docs/rules-1.png)
 
@@ -229,13 +227,13 @@ The game has a begin call to action in the main menu. This brings the user to th
 
 3. As a first-time visitor: I want to beat the computer in a game of probability.
 
-The player must make the correct choices enough to get their score to 5 to defeat the computer. The player can keep track of how they are doing at the stop of the screen in the score section.
+The player must make the correct choices, enough to get their score to 5 to defeat the computer. The player can keep track of how they are doing at the stop of the screen in the score section.
 
 ![alt text](assets/docs/victory-1.png)
 
 ![alt text](assets/docs/victory-2.png)
 
-4. As a recurring or first-time visator: I want to be able to quit the game at any time.
+4. As a recurring or first-time visitor: I want to be able to quit the game at any time.
 
 While designing the game at its early stages, I completely overlooked the ability to quit the game. I thought it would be a poor design choice to ask the player to refresh the page. Now the player can quit whenever they need with the quit button. It resets the game and brings the user back to the title menu.
 
@@ -245,7 +243,7 @@ While designing the game at its early stages, I completely overlooked the abilit
 
 5. As a recurring or first-time visitor: I want to be able to play again after winning/losing.
 
-The user may have likely been beaten by the computer and would like to play again. After losing or winning a match they will be presented with two call to actions. One button will reset the game and bring you back to the title screen. The other will reset the scores and begin a new match against the computer.
+The user may have likely been beaten by the computer and would like to play again. After losing or winning a match, they will be presented with two call to actions. One button will reset the game and bring you back to the title screen. The other will reset the scores and begin a new match against the computer.
 
 ![alt text](assets/docs/again-1.png)
 
@@ -261,39 +259,39 @@ Using SVGs for my images really helped with the page loading time. As well as th
 
 ## HTML, CSS and JS Validation
 
-I validated my website during its development as not to run into many issues towards the end. Luckily there were not many errors throughout. One warning still remains in the index page. However this is due to my use of the h2. I left it blank as this h2 is used for the random slogan generator.
+I validated my website during its development so as not to run into many issues towards the end. Luckily, there were not many errors throughout. One warning still remains in the index page. However, this is due to my use of the h2. I left it blank as this h2 is used for the random slogan generator.
 
 ### Index page
 
-![alt text](assets/docs/index.png)
+![An image showing the html validator showing no issues](assets/docs/index.png)
 
 ### Error page
 
-![alt text](assets/docs/404page.png)
+![An image showing the html validator showing no issues](assets/docs/404page.png)
 
 ### CSS
 
-![alt text](assets/docs/css.png)
+![An image showing the css validator showing no issues](assets/docs/css.png)
 
 ### JS
 
-![alt text](assets/docs/js.png)
+![An image showing the Javascript validator showing no issues](assets/docs/js.png)
 
 ## Bugs
 
 ![alt text](assets/docs/error-1.png)
 
-1. I had been using a class selector for my game reset function. I kept presenting an error in the console saying that it was not a function. This is because I was pulling an array of elements and not just one single one. This was a big learning milestone for me. I ended up using id selectors from then on.
+1. I had been using a class selector for my game reset function. I kept presenting an error in the console, saying that it was not a function. This is because I was pulling an array of elements and not just one single one. This was a big learning milestone for me. I ended up using id selectors from then on.
 
 ![alt text](assets/docs/error-2.png)
 
-2. I am sad to put this bug here as I could not defeat it. I spent a lot of time trying to replicate it so I could figure out what was wrong. I would wait by the computer at different stages of the game and set a timer to catch it. However it would always show completely eraticly when I was not ready. It does not seem to affect the game in any way shape or form. So sadly it must stay in it for now. I tweaked all of the event listeners of my jd code to get it to stop to no avail.
+2. I am sad to put this bug here as I could not defeat it. I spent a lot of time trying to replicate it so I could figure out what was wrong. I would wait on the computer at different stages of the game and set a timer to catch it. However, it would always show completely erratically when I was not ready. It does not seem to affect the game in any way. So, sadly, it must stay in it for now. I tweaked all of the event listeners of my jd code to get it to stop to no avail.
 
 ![alt text](assets/docs/error-3.png)
 
 ![alt text](assets/docs/error-4.png)
 
-3. A bug would come up with my svgs occasionally. The image would have random objects picked out and turned jet black. For some reason this happens when you use the export screens tool in illustrator. Which is frustrating because I then had to go back and export individual artboards. Instead of doing them all at once. An easy but annoying fix.
+3. A bug would come up with my svgs occasionally. The image would have random objects picked out and turned jet black. For some reason, this happens when you use the export screen tool in illustrator. Which is frustrating because I then had to go back and export individual artboards. Instead of doing them all at once. An easy but annoying fix.
 
 ## Deployment
 
