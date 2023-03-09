@@ -181,9 +181,9 @@ h2 {
     font-family: Josefin Sans;
     color: #f5d582;
     font-size: 1.5rem;
-    padding: 24px;
+    padding-left: 10px;
     text-align: left;
-    max-width: 75vw;
+    max-width: 70vw;
 }
 
 button:hover {
@@ -318,42 +318,42 @@ div.fadeIn {
     display: none;
 }
 
-.rules .content {
+.content {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     min-width: 250px;
     z-index: 2;
-    padding: 20px;
-    max-width: 300px;
+    max-width: 20vw;
+    max-height: 90vw;
 }
 
 
 
 .content>img {
-    min-width: 500px;
+    min-width: 29vw;
     height: fit-content;
-    border-radius: 10%;
-    text-align: center;
     position: relative;
-    right: 100px;
+    right: 6vw;
 }
 
 .rules-box {
+    display: flex;
     position: relative;
-    top: 30px;
-    right: 140px;
+    top: 1vw;
+    right: 6vw;
     background-color: #361731;
-    min-width: 600px;
-    height: 175px;
+    min-width: 30vw;
+    height: 130px;
     border: solid 5px #f5d582;
+    align-items: center;
 }
 
 .rules .close-btn {
     position: absolute;
-    top: 30px;
-    right: -65px;
+    top: 2vw;
+    right: -4vw;
     width: 50px;
     height: 50px;
     background: #f5d582;
@@ -404,6 +404,12 @@ div.fadeIn {
 
         justify-content: center;
         max-height: 100px;
+    }
+
+    .rules p {
+
+        font-size: 1.3rem;
+
     }
 }
 
@@ -472,6 +478,12 @@ div.fadeIn {
         height: 2rem;
     }
 
+    .rules p {
+
+        font-size: 1rem;
+
+    }
+
     .begin {
         position: absolute;
         bottom: 100px;
@@ -508,32 +520,7 @@ div.fadeIn {
     }
 }
 
-@media screen and (max-width: 700px) {
-    .rules .content {
-        top: 30%;
-        left: 30%;
-    }
 
-    .content>img {
-        min-width: 290px;
-        left: 30%;
-    }
-
-    .rules p {
-        font-size: 1.1rem;
-        padding: 0;
-
-    }
-
-    .rules-box {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        min-width: 100px;
-        right: -60px;
-        height: 140px;
-    }
-}
 
 @media screen and (min-width: 300px) {
     .title h1 {
