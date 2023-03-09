@@ -27,8 +27,8 @@ User goal's:
 1. As a first-time visitor: I want to check the rules of the game.
 2. As a first-time visitor: I want to play a game with a fun probability aspect to it.
 3. As a first-time visitor: I want to beat the computer in a game of probability.
-4. As a recurring or first-time visitor: I want to beat my record in defeating the computer.
-5. As a recurring or first-time visator: I want to be able to quit the game at any time.
+4. As a recurring or first-time visitor: I want to be able to quit the game at any time.
+5. As a recurring or first-time visitor: I want to be able to play again after winning/losing.
 
 # UX / UI
 
@@ -204,5 +204,58 @@ I used google lighthouse to make sure that my page was accessable as possible.
 Code institute slack channels were very important during this project.
 
 ## Testing
+
+1. As a first-time visitor: I want to check the rules of the game.
+
+The rules button is displayed always, apart from when the player has lost or won in the game. It is shown clearly in the top right hand of the screen whenever they need to remind themselves of the rules. The rules popup has an overlay as not to distract the user while they study. Then there is also an x button to return from the rules.
+
+![alt text](assets/docs/rules-1.png)
+
+![alt text](assets/docs/rules-2.png)
+
+![alt text](assets/docs/rules-3.png)
+
+2. As a first-time visitor: I want to play a game with a fun probability aspect to it.
+
+The game has a begin call to action in the main menu. This brings the user to the match section where again they are called to make a choice. They have a 1/5 chance of making the correct choice against the computer. This is a game of chance ultimately. The user continues to make choices until the score reaches 5. Resulting in victory or defeat. 
+
+![alt text](assets/docs/match-1.png)
+
+![alt text](assets/docs/match-2.png)
+
+![alt text](assets/docs/match-3.png)
+
+![alt text](assets/docs/match-4.png)
+
+3. As a first-time visitor: I want to beat the computer in a game of probability.
+
+The player must make the correct choices enough to get their score to 5 to defeat the computer. The player can keep track of how they are doing at the stop of the screen in the score section.
+
+![alt text](assets/docs/victory-1.png)
+
+![alt text](assets/docs/victory-2.png)
+
+4. As a recurring or first-time visator: I want to be able to quit the game at any time.
+
+While designing the game at its early stages, I completely overlooked the ability to quit the game. I thought it would be a poor design choice to ask the player to refresh the page. Now the player can quit whenever they need with the quit button. It resets the game and brings the user back to the title menu.
+
+![alt text](assets/docs/quit-1.png)
+
+![alt text](assets/docs/quit-2.png)
+
+5. As a recurring or first-time visitor: I want to be able to play again after winning/losing.
+
+The user may have likely been beaten by the computer and would like to play again. After losing or winning a match they will be presented with two call to actions. One button will reset the game and bring you back to the title screen. The other will reset the scores and begin a new match against the computer.
+
+![alt text](assets/docs/again-1.png)
+
+![alt text](assets/docs/again-2.png)
+
+
+
+
+
+
+
 
 
