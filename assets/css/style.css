@@ -343,7 +343,7 @@ div.fadeIn {
 .rules p {
     font-family: Josefin Sans;
     color: #f5d582;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-left: 10px;
     text-align: left;
     max-width: 70vw;
@@ -436,15 +436,12 @@ div.fadeIn {
 @media screen and (max-width: 1315px) {
     .choices {
         display: flex;
-
         justify-content: center;
         max-height: 100px;
     }
 
     .rules p {
-
-        font-size: 1.3rem;
-
+        font-size: 1.2rem;
     }
 }
 
