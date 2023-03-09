@@ -102,3 +102,23 @@ The name for this game was created by a random fantasy name generator I created 
 ## Features
 
 This game was designed with desktop in mind. However, works very well on tablet and mobile. Some mobile users may suffer when it comes to the rules section. A template design was used throughout the game to make sure that the style and layout was consistent.
+
+### Quit button
+
+Pretty self explanitory. The button was added to make sure that the user could leave at any time.
+
+### Random slogan generator
+
+The title screen has a new slogan beneath it everytime the page is loaded. I thought it added a fun aspect to the game. And could possibly promote the user to return to the game frequently for new phrases.
+
+### Rules button
+
+The rules button allows the player to remind themselves of the context and rules of the game. The unit indicator image could use a little work. However explaining the unit heirarchy in text became far too bulky.
+
+### Match section
+
+This section is the bread and butter of the game. A function takes the choices of the player and the computer and compares them. It is laid out to give all of the choices breathing room. But also not too much as to block the immersive artwork in the background. The is another function that updates the images of the match, again based on the choices of the player and the computer. A text call to action allows the player to know who one that round.
+
+### Score section
+
+The score section appears at the top of the screen to keep the player updated on whos winning the game. The game is up to 5 points. The player will get a different message depending on the outcome. The score is incremented by the update score function and is called each time the player and computer make their choice.
