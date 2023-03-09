@@ -102,7 +102,7 @@ h2 {
     width: 12rem;
     height: 5rem;
     color: #18060a;
-    font-size: larger;
+    font-size: 1.6rem;
     background: #f5d582;
     border: none;
     border-radius: 20px;
@@ -266,7 +266,7 @@ button:hover {
 .victory-defeat h2 {
     font-size: 4rem;
     position: relative;
-    bottom: 320px;
+    bottom: 250px;
 }
 
 #play-again {
@@ -421,10 +421,16 @@ div.fadeIn {
     .match button,
     .rules-button,
     .defeat-image button,
-    #quit {
+    #quit,
+    .gameover-button {
         width: 8rem;
         height: 3rem;
         font-size: large;
+    }
+
+    .victory-image {
+        display: flex;
+        flex-direction: column;
     }
 
     .defeat-image {
@@ -454,7 +460,6 @@ div.fadeIn {
 
     .score-section p {
         font-size: 1.1rem;
-
     }
 
     .rules-button,
@@ -495,7 +500,7 @@ div.fadeIn {
     .victory-defeat h2 {
         font-size: 4rem;
         position: relative;
-        bottom: 250px;
+        bottom: 190px;
     }
 }
 
