@@ -251,6 +251,96 @@ The user may have likely been beaten by the computer and would like to play agai
 
 ![alt text](assets/docs/again-2.png)
 
+## Lighthouse
+
+My web page scored very high on Google Lighthouse. Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more. 
+
+![alt text](assets/docs/lighthouse.png)
+
+Using SVGs for my images really helped with the page loading time. As well as the simple and clean layout. 
+
+## HTML, CSS and JS Validation
+
+I validated my website during its development as not to run into many issues towards the end. Luckily there were not many errors throughout. One warning still remains in the index page. However this is due to my use of the h2. I left it blank as this h2 is used for the random slogan generator.
+
+### Index page
+
+![alt text](assets/docs/index.png)
+
+### Error page
+
+![alt text](assets/docs/404page.png)
+
+### CSS
+
+![alt text](assets/docs/css.png)
+
+### JS
+
+![alt text](assets/docs/js.png)
+
+## Bugs
+
+![alt text](assets/docs/error-1.png)
+
+1. I had been using a class selector for my game reset function. I kept presenting an error in the console saying that it was not a function. This is because I was pulling an array of elements and not just one single one. This was a big learning milestone for me. I ended up using id selectors from then on.
+
+![alt text](assets/docs/error-2.png)
+
+2. I am sad to put this bug here as I could not defeat it. I spent a lot of time trying to replicate it so I could figure out what was wrong. I would wait by the computer at different stages of the game and set a timer to catch it. However it would always show completely eraticly when I was not ready. It does not seem to affect the game in any way shape or form. So sadly it must stay in it for now. I tweaked all of the event listeners of my jd code to get it to stop to no avail.
+
+![alt text](assets/docs/error-3.png)
+
+![alt text](assets/docs/error-4.png)
+
+3. A bug would come up with my svgs occasionally. The image would have random objects picked out and turned jet black. For some reason this happens when you use the export screens tool in illustrator. Which is frustrating because I then had to go back and export individual artboards. Instead of doing them all at once. An easy but annoying fix.
+
+## Deployment
+
+I deployed my game to GitPages using these steps:
+
+1. Sign into GitHub.
+2. Select your project from your repositories.
+3. At the top of your project select settings.
+4. Navigate your way to the pages section of settings.
+5. Select source and then select "Main" (It can also show up as master for some people)
+6. Click save.
+7. The page will generate a url, this will be where your page is hosted. (Be aware this may take a few minutes.)
+
+## Credits
+
+These are the sources that helped me make my way through this project. I used many pages for troubleshooting and wisdom when it came to creating my website.
+
+### Researching and inspiration:
+
+* [Awwwards](https://www.awwwards.com/)
+
+* [Behance](https://www.behance.net/)
+
+* [Web Developer Portfolios](https://www.hostinger.com/tutorials/web-developer-portfolio#1_Charles_Bruyerre)
+
+### Code sources and tutorials:
+
+* [Kevin Powell Tutorials](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw)
+
+* [Bro Code](https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ)
+
+* [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+* [Web Layout Critiques](https://www.youtube.com/@Hyperplexed)
+
+### Content 
+
+All of the content was written by me or was taken from of my favourite fantasy movies. Including Lord of the Rings.
+
+## Acknowledgements
+
+I would like to pass on a massive thank you to my mentor Harry Dhillon. He provided excellent adivce and was very supportive throughout the whole process. My good friend Daniel Roberts, he is a seasoned front end developer and also provided amazing tips. As well to all my family and friends who had a look at the game at my request.
+
+
+
+
+
 
 
 
