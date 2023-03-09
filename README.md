@@ -249,6 +249,8 @@ The user may have likely been beaten by the computer and would like to play agai
 
 ![alt text](assets/docs/again-2.png)
 
+A large part of testing the javascript durability in this project. Was sending it to all of my friends for them to break. It was a massive help when trying to spot any issues in the game.
+
 ## Lighthouse
 
 My web page scored very high on Google Lighthouse. Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO, and more. 
@@ -326,6 +328,8 @@ These are the sources that helped me make my way through this project. I used ma
 * [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 * [Web Layout Critiques](https://www.youtube.com/@Hyperplexed)
+
+* [Popups](youtube.com/watch?v=iE_6pQ3RlZU)
 
 ### Content 
 
