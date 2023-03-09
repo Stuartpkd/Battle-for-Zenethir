@@ -76,4 +76,4 @@ The game was intended to have a fun aspect to it. With the simple game loop and 
 
 #### Wireframes
 
-[Desktop](assets/docs/wireframe-pdf/desktop-wireframe.pdf)
+[Desktop](assets/docs/desktop.pdf) [Tablet](assets/docs/tablet.pdf) [Mobile](assets/docs/mobile.pdf)
