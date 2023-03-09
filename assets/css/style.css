@@ -183,6 +183,7 @@ h2 {
     font-size: 1.5rem;
     padding: 24px;
     text-align: left;
+    max-width: 75vw;
 }
 
 button:hover {
@@ -420,7 +421,6 @@ div.fadeIn {
         padding: 10px;
     }
 
-
     .title button,
     .match button,
     .rules-button,
@@ -508,8 +508,37 @@ div.fadeIn {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .rules .content {
+        top: 30%;
+        left: 30%;
+    }
+
+    .content>img {
+        min-width: 290px;
+        left: 30%;
+    }
+
+    .rules p {
+        font-size: 1.1rem;
+        padding: 0;
+
+    }
+
+    .rules-box {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        min-width: 100px;
+        right: -60px;
+        height: 140px;
+    }
+}
+
 @media screen and (min-width: 300px) {
     .title h1 {
         font-size: 6.5vw;
     }
+
+
 }
