@@ -2,7 +2,7 @@
 
 [Please visit the website here.](https://stuartpkd.github.io/Battle-for-Zenethir/)
 
-[A mock up showing the game on different devices](assets/docs/mock.png)
+![An image showing the game on different devices.](assets/docs/mock.png)
 
 I created this game to demonstrate my understanding and aptitude for Javascript. I have played a lot of real-time strategy games throughout my life. I always liked the idea of certain units countering others. There was always an aspect of rock paper scissors to it. So I felt rebranding rock paper scissors to have a real-time strategy aspect to it would work well.
 
