@@ -188,7 +188,7 @@ h2 {
 
 button:hover {
     color: #18060a;
-    background-color: #f2dba3;
+    background-color: #f5e6bf;
 }
 
 /*Match section*/
@@ -379,21 +379,43 @@ div.fadeIn {
     display: block;
 }
 
-
-@keyframes attackRight {
-    from {
-        left: 0px;
+@media screen and (min-width: 300px) {
+    body {
+        height: 100vh;
     }
 
-    to {
-        left: 20px;
+    .error {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #222;
+        padding: 30px;
+        height: 100vh;
     }
-}
 
-.attackRight {
-    animation: linear;
-    animation-name: attackRight;
-    animation-duration: 2s;
+    .error-image {
+        background: url(..//svg/404.svg) center center no-repeat;
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .error h1 {
+        font-size: 10vw;
+        color: #f5d582;
+    }
+
+    .error button {
+        width: 10rem;
+        height: 4rem;
+        background: none;
+        border: none;
+        color: #18060a;
+        font-size: larger;
+        background: #f5d582;
+        border-radius: 20px;
+        font-family: Josefin Sans;
+
+    }
 }
 
 /* Media Queries */
