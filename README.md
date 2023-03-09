@@ -122,3 +122,87 @@ This section is the bread and butter of the game. A function takes the choices o
 ### Score section
 
 The score section appears at the top of the screen to keep the player updated on whos winning the game. The game is up to 5 points. The player will get a different message depending on the outcome. The score is incremented by the update score function and is called each time the player and computer make their choice.
+
+### Victory and defeat sections
+
+The victory and defeat screens show up when the player or the computer reaches 5 points. They are then presented with unique artwork for each outcome. As well as call to actions to return to the main menu. Or return to the battlefield to fight once again!
+
+### Error 404 page
+
+The file directory also contains an error 404 page to bring the user back to the home page.
+
+## Future features
+
+With more time I would have liked to have added some of these features. When I finish the full stack course, I intend on returning to this project to add some of them.
+
+### Custom armies
+
+It would be great to have a series of artworks for the player to choose from. I feel they could have bigger concern for their own army then. 
+
+### Decisive victory and total defeat
+
+I would like to add another if statement, stating that if the player or computer win by 5 points to none. A decisive victory or a total defeat screen would be shown. (The chances of this happening are 0.032%)
+
+### Css animations for the choices
+
+I think some animation for the unit choices could also really add to the game.
+
+## Technologies
+
+1. [Html](https://www.w3schools.com/html/)
+Used to structure my webstie into basic building blocks.
+
+2. [CSS](https://www.w3schools.com/css/)
+This was then used to style all of my building blocks.
+
+3. [Javascript](https://www.w3schools.com/js/)
+Javascript was used to create the whole game.
+
+4. [Google Fonts](https://fonts.google.com/)
+I used this to find my fonts for the web page.
+
+5. [Bro Code Rock Paper Scissors](https://www.youtube.com/watch?v=n1_vHArDBRA)
+I used this tutorial to see how I would go about making my own game.
+
+6. [Google Dev Tools](https://developer.chrome.com/docs/devtools/)
+This was essential when designing the game, particularly with the responsiveness. As well as bug finding.
+
+7. [GitHub](https://github.com/)
+This was used to store all of my code safely.
+
+8. [Git](https://git-scm.com/)
+This allowed me to version control my code. As well as push and commit pieces to Github when I needed.
+
+9. [Gitpod](https://www.gitpod.io/)
+I used gitpod as my development environment.
+
+10. [Illustrator](https://en.wikipedia.org/wiki/Adobe_Illustrator)
+I used illustrator to create all the imagery for the game. As well as the wireframes.
+
+11. [W3 School Html Validator](https://validator.w3.org/)
+This validator made sure that there were no errors in my html code.
+
+12. [W3 School CSS Validator](https://validator.w3.org/)
+This validator made sure that there were no errors in my CSS code.
+
+13. [Js Hint](https://jshint.com/)
+Js hint helped me make sure there was no issues with my Js code.
+
+13. [Colour Hunt](https://colorhunt.co/)
+I use this as an extension in my browser. It really helps me find great colour palettes.
+
+14. [Flex Box](https://www.w3schools.com/css/css3_flexbox.asp)
+Flex box helped a lot when it came to the page layouts. 
+
+15. [Code Institute](https://codeinstitute.net/ie/)
+The code institute lessons were used many times to troubleshoot.
+
+16. [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+I used google lighthouse to make sure that my page was accessable as possible.
+
+17. [Slack](https://slack.com/intl/en-ie/)
+Code institute slack channels were very important during this project.
+
+## Testing
+
+
