@@ -47,6 +47,8 @@ const game = () => {
         });
     };
 
+    //Random slogan generator
+
     const slogans = ["Have at thee!", "It's a dangerous business, going out your door", "Test your might", "To arms men!", "We shall fight in the shade", "Look to my coming, on the first light", "You shall not pass!", "It's only a flesh wound", "Speak friend and enter", "Do you want to live forever?"];
     const randomNumber = (max) => Math.floor(Math.random() * max);
     const getSlogan = () => `${slogans[randomNumber(slogans.length)]}`;
@@ -74,9 +76,9 @@ const game = () => {
         const match = document.getElementById('match-screen');
         match.classList.remove('fadeIn');
         const resetScreen = document.getElementById('game-screen');
-        resetScreen.classList.remove('hidden')
+        resetScreen.classList.remove('hidden');
         const titleScreen = document.getElementById('title-screen');
-        titleScreen.classList.remove('fadeOut')
+        titleScreen.classList.remove('fadeOut');
         const playerScore = document.querySelector('.player-score p');
         const cpuScore = document.querySelector('.cpu-score p');
         pScore = 0;
@@ -88,6 +90,8 @@ const game = () => {
         const scoreScreen = document.getElementById('score-screen');
         scoreScreen.classList.add('hidden-score');
     }
+
+    //Quit button event listener
 
     const quitBtn = document.getElementById('quit');
     quitBtn.addEventListener('click', quitGame);
@@ -106,7 +110,7 @@ const game = () => {
         cpuScore.textContent = 0;
         const winner = document.querySelector('.winner');
         winner.textContent = 'Choose an option';
-    };
+    }
 
     //Win or lose screens.
 
@@ -146,7 +150,7 @@ const game = () => {
 
             //Quit game
 
-            const quitWin = document.getElementById('quit-victory')
+            const quitWin = document.getElementById('quit-victory');
             quitWin.addEventListener('click', () => {
                 const victoryScreen = document.getElementById('popup-victory');
                 victoryScreen.classList.add('hidden');
@@ -155,9 +159,9 @@ const game = () => {
                 const match = document.getElementById('match-screen');
                 match.classList.remove('fadeIn');
                 const resetScreen = document.getElementById('game-screen');
-                resetScreen.classList.remove('hidden')
+                resetScreen.classList.remove('hidden');
                 const titleScreen = document.getElementById('title-screen');
-                titleScreen.classList.remove('fadeOut')
+                titleScreen.classList.remove('fadeOut');
                 const playerScore = document.querySelector('.player-score p');
                 const cpuScore = document.querySelector('.cpu-score p');
                 pScore = 0;
@@ -179,9 +183,9 @@ const game = () => {
                 const match = document.getElementById('match-screen');
                 match.classList.remove('fadeIn');
                 const resetScreen = document.getElementById('game-screen');
-                resetScreen.classList.remove('hidden')
+                resetScreen.classList.remove('hidden');
                 const titleScreen = document.getElementById('title-screen');
-                titleScreen.classList.remove('fadeOut')
+                titleScreen.classList.remove('fadeOut');
                 const playerScore = document.querySelector('.player-score p');
                 const cpuScore = document.querySelector('.cpu-score p');
                 pScore = 0;
@@ -196,11 +200,7 @@ const game = () => {
             // Prevent repeated event handler addition at the end of the next match
             playAgainEventHandlerApplied = true;
         }
-    };
-
-
-
-
+    }
 
     //Choice Comparison - tie
 
