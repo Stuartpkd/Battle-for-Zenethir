@@ -73,3 +73,7 @@ This is a single web page. It contains the title screen which introduces the pla
 The game was intended to have a fun aspect to it. With the simple game loop and the randomly generated slogans. I wanted to be able to dress up a game of rock paper scissors so much. That you would not realise you were playing it anymore.
 
 ### Skeleton 
+
+#### Wireframes
+
+[Desktop](assets/docs/wireframe-pdf/desktop-wireframe.pdf)
