@@ -3,7 +3,6 @@
 
 /*Body Styling*/
 
-
 body {
     margin: 0;
     padding: 0;
@@ -11,16 +10,19 @@ body {
     min-height: 100vh;
 }
 
+/*h1 styling*/
+
 h1 {
     font-family: Josefin Sans;
     font-size: large;
 }
 
+/*h2 styling*/
+
 h2 {
     font-family: Josefin Sans;
     color: #222;
 }
-
 
 /*Game Section*/
 
@@ -40,6 +42,8 @@ h2 {
     align-items: center;
     font-size: 1.5rem;
 }
+
+/*Match Image*/
 
 .match-images {
     max-width: 500px;
@@ -64,7 +68,7 @@ h2 {
     font-size: 2rem;
 }
 
-/*Title h1*/
+/*Title stylings*/
 
 .title h1 {
     font-size: 5rem;
@@ -98,6 +102,8 @@ h2 {
     font-family: Josefin Sans;
 }
 
+/*Game over section*/
+
 .gameover-button {
     width: 10rem;
     height: 4rem;
@@ -109,6 +115,8 @@ h2 {
     font-family: Josefin sans;
 }
 
+/*Play again + quit styling*/
+
 #play-again-victory {
     position: relative;
     bottom: 200px;
@@ -119,18 +127,6 @@ h2 {
     position: relative;
     bottom: 200px;
     left: 40px;
-}
-
-.rules-button {
-    width: 9rem;
-    height: 3.5rem;
-    background: none;
-    border: none;
-    color: #18060a;
-    font-size: x-large;
-    background: #f5d582;
-    border-radius: 20px;
-    font-family: Josefin Sans;
 }
 
 .quit-btn {
@@ -154,6 +150,8 @@ h2 {
     font-family: Josefin Sans;
 }
 
+/*Title button*/
+
 .title button {
     width: 12rem;
     height: 5rem;
@@ -168,23 +166,7 @@ h2 {
 
 
 
-.rules-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: absolute;
-    top: 5rem;
-    right: 1rem;
-}
-
-.rules p {
-    font-family: Josefin Sans;
-    color: #f5d582;
-    font-size: 1.5rem;
-    padding-left: 10px;
-    text-align: left;
-    max-width: 70vw;
-}
+/*Button response*/
 
 button:hover {
     color: #18060a;
@@ -209,7 +191,6 @@ button:hover {
     font-size: 2.5rem;
 }
 
-
 /*Winner Section + Choice Section*/
 
 .images {
@@ -224,8 +205,6 @@ button:hover {
     align-items: center;
     max-height: 20px;
 }
-
-
 
 #cpuImage {
     transform: scaleX(-1);
@@ -255,8 +234,6 @@ button:hover {
     align-items: center;
     text-align: center;
 }
-
-
 
 .defeat-image>button {
     width: 10rem;
@@ -318,6 +295,8 @@ div.fadeIn {
     display: none;
 }
 
+/*Popup content*/
+
 .content {
     position: absolute;
     top: 45%;
@@ -329,13 +308,43 @@ div.fadeIn {
     max-height: 90vw;
 }
 
-
-
 .content>img {
     min-width: 29vw;
     height: fit-content;
     position: relative;
     right: 6vw;
+}
+
+/*Rules*/
+
+.rules-button {
+    width: 9rem;
+    height: 3.5rem;
+    background: none;
+    border: none;
+    color: #18060a;
+    font-size: x-large;
+    background: #f5d582;
+    border-radius: 20px;
+    font-family: Josefin Sans;
+}
+
+.rules-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+}
+
+.rules p {
+    font-family: Josefin Sans;
+    color: #f5d582;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    text-align: left;
+    max-width: 70vw;
 }
 
 .rules-box {
@@ -379,6 +388,8 @@ div.fadeIn {
     display: block;
 }
 
+/*Media query for error 404*/
+
 @media screen and (min-width: 300px) {
     body {
         height: 100vh;
@@ -418,7 +429,7 @@ div.fadeIn {
     }
 }
 
-/* Media Queries */
+/*Media query for screen @1315 below*/
 
 @media screen and (max-width: 1315px) {
     .choices {
@@ -435,7 +446,12 @@ div.fadeIn {
     }
 }
 
+/*Media query for screen @1000 below*/
+
 @media screen and (max-width: 1000px) {
+
+    /*Choices*/
+
     .choices {
         display: flex;
         flex-direction: column;
@@ -449,6 +465,8 @@ div.fadeIn {
         padding: 10px;
     }
 
+    /*Buttons*/
+
     .title button,
     .match button,
     .rules-button,
@@ -460,6 +478,8 @@ div.fadeIn {
         font-size: large;
     }
 
+    /*Victory + defeat*/
+
     .victory-image {
         display: flex;
         flex-direction: column;
@@ -469,6 +489,8 @@ div.fadeIn {
         display: flex;
         flex-direction: column;
     }
+
+    /*Score + match*/
 
     .score-section h2 {
         font-size: 1.5rem;
@@ -485,6 +507,8 @@ div.fadeIn {
     .score-section {
         padding-top: 35px;
     }
+
+    /*Rules*/
 
     .rules-div {
         top: 1rem;
@@ -506,10 +530,14 @@ div.fadeIn {
 
     }
 
+    /*Begin button*/
+
     .begin {
         position: absolute;
         bottom: 100px;
     }
+
+    /*Play again*/
 
     #quit-victory {
         position: relative;
@@ -542,12 +570,10 @@ div.fadeIn {
     }
 }
 
-
+/*Main title responsiveness*/
 
 @media screen and (min-width: 300px) {
     .title h1 {
         font-size: 6.5vw;
     }
-
-
 }
