@@ -77,3 +77,28 @@ The game was intended to have a fun aspect to it. With the simple game loop and 
 #### Wireframes
 
 [Desktop](assets/docs/desktop.pdf) [Tablet](assets/docs/tablet.pdf) [Mobile](assets/docs/mobile.pdf)
+
+Please be aware, the wireframes may not represent the game accurately. As the game was subject to change as I was building it.
+
+I did not want to stray too far away from the wireframes. As they had a clean and imple layout that would make designing it a much easier experience. A few features needed to be added such as a quit button and a more sophisticated rules button. However this did not affect the layout too much.
+
+## Surface
+
+I used a muted colour palette for the main background of the game. It gave a good 'battlefield' effect. But also did not bring too much attention to itself. The units of the game were given a bright vibrant colour palette. As one of the early difficulties was getting them to stand out against the background.
+
+![alt text](assets/docs/art.png)
+
+Here are some of the concept art ideas for the game when it was in early development. Use of gradients and color theory can give a good idea of depth in an image without having to animate anything.
+
+![alt text](assets/docs/font.png)
+
+Lastly I used Josefin Sans as the font for the whole game. I thought it had a great look, but also gave off a good fanatasy element from it.
+
+![alt text](assets/docs/name.png)
+![alt text](assets/docs/generator.png)
+
+The name for this game was created by a random fantasy name generator I created in GitHub. I could not come up with a decent one myself, so I made a function to make one for me.
+
+## Features
+
+This game was designed with desktop in mind. However, works very well on tablet and mobile. Some mobile users may suffer when it comes to the rules section. A template design was used throughout the game to make sure that the style and layout was consistent.
