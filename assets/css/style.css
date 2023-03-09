@@ -171,6 +171,10 @@ button:hover {
     background-color: #f5e6bf;
 }
 
+#quit:hover {
+    background-color: #f5e6bf;
+}
+
 /*Match section*/
 
 .match {
